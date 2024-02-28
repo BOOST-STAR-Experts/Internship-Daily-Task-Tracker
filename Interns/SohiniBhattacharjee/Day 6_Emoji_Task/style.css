@@ -1,0 +1,56 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  gap: 50px;
+}
+
+.emoji {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(241, 230, 8);
+  border-radius: 50%;
+  position: relative;
+}
+
+.eye {
+  width: 25px;
+  height: 25px;
+  border: 2px solid black;
+  border-radius: 50%;
+  position: absolute;
+  top: 30%;
+}
+
+.left-eye {
+  left: 30%;
+}
+
+.right-eye {
+  right: 30%;
+}
+
+.mouth {
+  width: 100px;
+  height: 50px;
+  border-radius: 0 0 100px 100px;
+  border: 2px solid #000;
+  background-color: aliceblue;
+  position: relative;
+  top: 50%;
+  left: 25%;
+}
+
+.eyeball {
+  width: 12px;
+  height: 12px;
+  background-color: #000;
+  border-radius: 50%;
+  position: relative;
+  top: 50%;
+  left: 25%;
+}
+
