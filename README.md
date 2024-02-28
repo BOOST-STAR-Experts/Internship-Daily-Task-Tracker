@@ -46,6 +46,6 @@ You have collaborator access, so no need to create a pull request. Directly push
      git push origin main
      ```
 
-Now you've successfully updated your daily tasks! Repeat steps 3-6 for each day.
+Now you've successfully updated your daily tasks! Repeat these steps for each day.
 
 
