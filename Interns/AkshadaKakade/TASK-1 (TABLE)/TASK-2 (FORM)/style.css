@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    height: 100%;
+    width: 100%;
+    margin-top: 150px;
+    background-color: rgba(215, 212, 212, 0.927);
+}
+.container{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+.text{
+    padding :20px;
+    margin: 10px;
+    text-align: left;
+    width: 380px;
+}
+.text p{
+    font-size: 24px;
+    font-weight: 570;
+}
+h1{
+    color: blue;
+    font-size: 100px;
+}
+.formsec{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+form{
+    margin:20px;
+    padding:20px;
+    background:white;
+    width: 380px;
+    height: 350px;
+    border: 1px solid white;
+    border-radius: 12px;
+    box-shadow:10px 10px 20px gray;
+}
+input{
+    margin:15px;
+    padding: 10px;
+    background-color: transparent;
+    width:320px;
+    border: 1px solid gray;
+    border-radius:4px;
+    font-size: 15px;
+}
+.login{
+    background-color: rgba(0, 0, 255, 0.681);
+    border: 1px solid rgba(0, 0, 255, 0.681);
+    border-radius:4px;
+    font-size: 17px;
+    width:320px;
+    padding: 10px;
+    margin: 15px;
+    color:white;
+}
+hr{
+    margin: 15px 0;
+}
+.formsec p{
+    text-align: center;
+    color:blue;
+    background:white;
+    margin-top: 5px;
+    font-size: 17px;
+}
+.account{
+    background-color: rgba(64, 215, 64, 0.882);
+    width:200px;
+    border: 1px solid green;
+    border-radius: 4px;
+    margin-left: 70px;
+    font-size: 17px;
+    padding: 10px;
+    color:white;
+}
+.line{
+    text-align: center;
+    font-size: 17px;
+    padding: 10px;
+}
+span{
+    font-weight: 700;
+}
+@media(max-width: 820px){
+    .container{
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+        gap: 0px;
+        margin-top: 20px;
+    }
+    h1{
+        font-size: 80px;
+    }
+    text p {
+        font-size: 15px;
+        font-weight: 300;
+    }
+}

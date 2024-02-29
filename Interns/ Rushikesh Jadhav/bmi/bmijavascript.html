@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BMI Calculator</title>
+<script>
+  function calculateBMI(weight, height) {
+      return weight / (height * height);
+  }
+
+  function getBMICategory(bmi) {
+      if (bmi < 18.5) {
+          return "Underweight";
+      } else if (bmi >= 18.5 && bmi <= 24.9) {
+          return "Healthy";
+      } else if (bmi >= 25 && bmi <= 29.9) {
+          return "Overweight";
+      } else {
+          return "Obese";
+      }
+  }
+
+  function reportBMI() {
+      const weight = parseFloat(document.getElementById("weight").value);
+      const heightCm = parseFloat(document.getElementById("heightCm").value);
+      const height = heightCm / 100; // Convert cm to meters
+      const bmi = calculateBMI(weight, height);
+      const category = getBMICategory(bmi);
+      document.getElementById("result").innerHTML = `Your Body Mass Index is: ${bmi.toFixed(2)} and You are ${category}.`;
+  }
+</script>
+</head>
+<body>
+
+<h2>BMI Calculator</h2>
+
+<form>
+  <label for="weight">Weight (kg):</label>
+  <input type="number" id="weight" name="weight" step="any"><br><br>
+  
+  <label for="heightCm">Height (cm):</label>
+  <input type="number" id="heightCm" name="heightCm" step="any"><br><br>
+  
+  <button type="button" onclick="reportBMI()">Calculate BMI</button>
+</form>
+
+<div id="result"></div>
+
+</body>
+</html>
