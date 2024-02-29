@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.heading
+{   text-align: center;
+    text-shadow: 0 0 7px rgb(109, 109, 240),0 0 7px rgb(240, 109, 240);
+    font-size: larger;
+    margin: 25px;
+}
+body{
+    min-height: 100vh;
+    background:url('image/BMI.avif');
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: sans-serif;
+    left: 20px;
+    top: 80px;;
+}
+.container
+{
+    position: absolute;
+    left:2%;
+    top:20%;
+}
+.box
+{
+    min-width: 400px;
+    line-height: 40px;
+    background:skyblue;
+    text-align: center;
+    border-radius: 12px;
+}
+.box h1
+{
+    padding:20px 0px;
+    font-size: 35px;
+    font-family:Kode Mono;
+    
+}
+.input
+{
+    border-radius: 25px;
+}
+
+.input label{
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    color:brown;
+    margin-bottom: 20px;
+}
+.input input
+{
+    outline: none;
+    font-size: 28px;
+    width:50%;
+    font-family:Kode Mono;
+}
+ #calculate{
+    font-family:Kode Mono;
+    color:beige;
+    background-color: brown;
+    font-size: 20px;
+    border-radius: 10px;
+    width:40%;
+    margin: 20px;
+    padding: 12px 0px;
+    outline: none;
+    border:none;
+    transition:background .6s ease;
+}
+#calculate:hover
+{
+    background-color: blueviolet;
+}
+.result
+{
+    font-size: 20px;
+    font-weight: bold;
+}
+.result p
+{
+    margin: 18px;
+}
+.result #result
+{
+    font-size: 30px;
+    font-weight: 900;
+    color:deeppink;
+    background-color: #eee0e0;
+    padding: 6px 8px;
+    border-radius: 4px;
+    display: inline-block;
+   }
+   .comment #comment
+   {
+    color: red;
+    font-weight:800;
+   }

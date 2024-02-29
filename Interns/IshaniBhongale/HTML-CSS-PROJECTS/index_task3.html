@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Flower Gallery</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="main_container">
+        <h1>Welcome to the Flower Gallery!!</h1>
+    <div class="container">
+        <div class="box1 margin_left"><img src="images/f1.jpg"></div>
+        <div class="box1"><img src="images/f2.jpg"></div>
+        <div class="box1"><img src="images/f3.jpg"></div>
+        <div class="box1"><img src="images/f4.jpg"></div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="box1 margin_left"><img src="images/f5.jpg"></div>
+        <div class="box1"><img src="images/f6.jpg"></div>
+        <div class="box1"><img src="images/f7.jpg"></div>
+        <div class="box1"><img src="images/f8.jpg"></div>
+    </div>
+    </div>
+
+</body>
+</html>
+
+#CSS FILE:
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main_container{
+    width: 100%;
+    background-color: rgb(240, 227, 227);  
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.main_container h1{
+   text-align: center;
+   width: 100%;
+   background-color: rgb(194, 184, 235);
+   margin-top: 10px;
+   margin-bottom: 20px;
+   padding: 15px;
+}
+.box1{
+    height: 190px;
+    width: 24%;
+    display: inline-block;
+    margin-left: 8px; 
+    vertical-align: top;
+    padding: auto;
+    border-radius: 34px;
+    background: #e0e0e0;
+    box-shadow:  10px 10px 20px #a8a8a8,
+     -10px -10px 20px #ffffff;
+}
+.margin_left{
+    margin-left: 0px;
+}
+.box1 img{
+    height: 100%;
+    width: 100%;
+    border-radius: 34px;
+    background: #e0e0e0;
+    box-shadow:  10px 10px 20px #a8a8a8,
+     -10px -10px 20px #ffffff;
+}

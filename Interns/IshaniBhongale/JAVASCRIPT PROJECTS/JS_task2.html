@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>String functions</title>
+    <!-- <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script> -->
+</head>
+<body>
+    <script>
+    
+        // 1. How do you get “Null” as the datatype when defined with a variable?
+        // var a = null;
+        // var b = null;
+        // var c;
+        // var ch="Hey";
+        // console.log(ch);
+        // console.log(a);
+        // console.log(typeof(b));
+        // console.log(a, b, c);
+
+        //2.STRING METHODS 
+        let a="Hey There!";
+        //1. length()
+        console.log("Length: ",a.length);
+
+        //2. charAt()
+        console.log("Char At: ",a.charAt(2));
+
+        //3. charCodeAt()
+        console.log("Code Char At: ",a.charCodeAt(1));
+
+        //4. slice()
+        console.log("Slice: ",a.slice(4,7));
+
+        //5. substring()
+        console.log("Substring: ",a.substring(3,8));
+
+        //6. toLowerCase()
+        console.log("Lowercase: ",a.toLowerCase());
+
+        //7. toUpperCase()
+        console.log("Uppercase: ",a.toUpperCase());
+
+        //8. concat()
+        let b="45";
+        console.log("Concatenation: ",a.concat(" ",b));
+
+        //9. trim()
+        let c="      HELLO WORLD!!     ";
+        console.log("Trim: ",c.trim());
+
+        //10. repeat()
+        console.log("Repeat: ",a.repeat(3));
+
+        //11. replace()
+        console.log("Replace: ",a.replace("Hey","HELLO"));
+
+        //12. split()
+        console.log("Split: ",a.split(","));
+
+        //13. toString()
+        let e=36;
+        console.log("To String: ",e.toString());
+
+        //14. indexOf()
+        console.log("Index Of: ",a.indexOf('e'));
+
+        //15. lastIndexOf()
+        console.log("Last Index Of: ",a.lastIndexOf('e'));
+
+    </script>
+    
+</body>
+</html>
+

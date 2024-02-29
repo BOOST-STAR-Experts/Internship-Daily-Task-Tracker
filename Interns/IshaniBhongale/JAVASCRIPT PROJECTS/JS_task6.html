@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects in JS</title>
+</head>
+<body>
+    <script>
+
+        //OBJECTS IN JAVASCRIPT
+        console.log("Objects in JS");
+        console.log("");
+
+        // Example 1: ************************************************************************************8
+
+        //1. OBJECT CREATION IN JS
+        let obj = {};
+
+        //2. ADDING PROPERTIES TO THE OBJECT
+        obj.sub1 = "DBMS",
+        obj.sub2 = "TOC",
+        obj.sub3 = "AI",
+        obj.sub4 = "WT",
+        obj.sub5 = 348,
+
+        //3. ACCESSING PROPERTIES
+        console.log(`Subjects are: ${obj.sub1},${obj.sub2},${obj.sub3},${obj.sub4}`);
+        console.log(obj.sub5);
+        console.log("");
+
+        // Example 2:************************************************************************************8
+
+        //1. ADVANCE CONCEPTS
+        let myobj = {
+            name : "Booststar",
+            hello : function(){
+                console.log("Hello " + this.name + "!!");
+            }
+        };
+        
+        //2. INVOKING FUNCTION IN OBJECT
+        myobj.hello();
+        console.log("");
+
+        // Example 3:************************************************************************************8
+
+        //OBJECT CONSTRUCTORS-1
+        console.log("Object Constructors");
+        function person(name,age){
+            this.name = name;
+            this.age = age;
+        }
+        
+        let user1=new person("Asha",14);
+        console.log(`Hey! My name is ${user1.name} and I am ${user1.age} years old.`);
+        console.log("");
+
+        // Example 4:************************************************************************************8
+
+        //1. ADVANCE CONCEPTS
+        let myobj1 = {
+            num : 43,
+            even_odd : function(){
+                let eo = this.num%2;
+                if(eo==0){
+                    console.log(this.num," is an Even Number.");
+                }
+                else{
+                    console.log(this.num," is an Odd Number.");
+                }
+            }
+        };
+        
+        //2. INVOKING FUNCTION IN OBJECT
+        myobj1.even_odd();
+        console.log("");
+
+        // Example 5:************************************************************************************8
+
+        //OBJECT CONSTRUCTORS-2
+        console.log("Object Constructors");
+        function add(num1,num2){
+            this.num1 = num1;
+            this.num2 = num2;
+            let sum = this.num1+this.num2;
+        }
+
+        let obj1=new add(12,45);
+        console.log(`The sum of ${obj1.num1} and ${obj1.num2} is ${obj1.sum}.`);
+        console.log("");
+    
+    </script>
+</body>
+</html>

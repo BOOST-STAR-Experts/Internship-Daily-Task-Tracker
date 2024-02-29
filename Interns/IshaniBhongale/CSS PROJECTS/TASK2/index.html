@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Sticky Navigation Bar</title>
+    <link rel='stylesheet' href='style.css'>
+</head>
+<body>
+    <div class="header">
+        <nav id="navbar">
+            <img src="images/logo.png" class="logo">
+            <ul id="menu">
+                <li>HOME</li>
+                <li>ABOUT</li>
+                <li>SERVICES</li>
+                <li>PRODUCTS</li>
+                <li>CONTACT</li>
+            </ul>
+        </nav>
+    </div>
+    <p class="text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Rem quo consectetur tempora commodi suscipit aperiam tenetur rerum at voluptatibus saepe porro veritatis hic 
+        expedita repellat iure id, asperiores ratione impedit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, fuga quod! Nisi, eveniet aliquid tempora adipisci distinctio,
+         rem aliquam pariatur vel sapiente libero explicabo ducimus repudiandae delectus repellendus? Recusandae, numquam.Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+         Rem quo consectetur tempora commodi suscipit aperiam tenetur rerum at voluptatibus saepe porro veritatis hic 
+         expedita repellat iure id, asperiores ratione impedit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, fuga quod! Nisi, eveniet aliquid tempora adipisci distinctio,
+          rem aliquam pariatur vel sapiente libero explicabo ducimus repudiandae delectus repellendus? Recusandae, numquam.
+    </p>
+
+    <p class="text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Rem quo consectetur tempora commodi suscipit aperiam tenetur rerum at voluptatibus saepe porro veritatis hic 
+        expedita repellat iure id, asperiores ratione impedit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, fuga quod! Nisi, eveniet aliquid tempora adipisci distinctio,
+         rem aliquam pariatur vel sapiente libero explicabo ducimus repudiandae delectus repellendus? Recusandae, numquam.Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+         Rem quo consectetur tempora commodi suscipit aperiam tenetur rerum at voluptatibus saepe porro veritatis hic 
+         expedita repellat iure id, asperiores ratione impedit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, fuga quod! Nisi, eveniet aliquid tempora adipisci distinctio,
+          rem aliquam pariatur vel sapiente libero explicabo ducimus repudiandae delectus repellendus? Recusandae, numquam.
+    </p>
+
+    <p class="text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Rem quo consectetur tempora commodi suscipit aperiam tenetur rerum at voluptatibus saepe porro veritatis hic 
+        expedita repellat iure id, asperiores ratione impedit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, fuga quod! Nisi, eveniet aliquid tempora adipisci distinctio,
+         rem aliquam pariatur vel sapiente libero explicabo ducimus repudiandae delectus repellendus? Recusandae, numquam.Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+         Rem quo consectetur tempora commodi suscipit aperiam tenetur rerum at voluptatibus saepe porro veritatis hic 
+         expedita repellat iure id, asperiores ratione impedit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, fuga quod! Nisi, eveniet aliquid tempora adipisci distinctio,
+          rem aliquam pariatur vel sapiente libero explicabo ducimus repudiandae delectus repellendus? Recusandae, numquam.
+    </p>
+
+    <p class="text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Rem quo consectetur tempora commodi suscipit aperiam tenetur rerum at voluptatibus saepe porro veritatis hic 
+        expedita repellat iure id, asperiores ratione impedit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, fuga quod! Nisi, eveniet aliquid tempora adipisci distinctio,
+         rem aliquam pariatur vel sapiente libero explicabo ducimus repudiandae delectus repellendus? Recusandae, numquam.Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+         Rem quo consectetur tempora commodi suscipit aperiam tenetur rerum at voluptatibus saepe porro veritatis hic 
+         expedita repellat iure id, asperiores ratione impedit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, fuga quod! Nisi, eveniet aliquid tempora adipisci distinctio,
+          rem aliquam pariatur vel sapiente libero explicabo ducimus repudiandae delectus repellendus? Recusandae, numquam.
+    </p>
+
+    <script>
+        var navbar = document.getElementById("navbar");
+        var menu = document.getElementById("menu");
+
+        window.onscroll = function(){
+            if(window.pageYOffset >= menu.offsetTop){
+                navbar.classList.add("sticky");
+            }
+            else{
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+</body>
+</html>

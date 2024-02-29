@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions in JS</title>
+</head>
+<body>
+    <script>
+        // 1. NAMED FUNCTIONS
+        console.log("Named Functions");
+        // Example 1:
+        function mult(a, b){
+            var c=a*b;
+            console.log("Product: ",c);
+        }
+        mult(2,6);
+
+        //Example 2:
+        function display(r,f){
+            console.log(r,f);
+        }
+        display("hey","there");
+
+        //Example 3:
+        function display1(e,d){
+            e="Hello ";
+            d="World!!!";
+            console.log(e,d);
+        }
+        display1("hey","there");
+
+        //Example 4:
+        function sqrt(x){
+            let s=Math.sqrt(x);
+            console.log("Squareroot: ",s);
+        }
+        sqrt(25);
+        console.log("");
+
+        //2. ANONYMOUS FUNCTIONS
+        console.log("Anonymous Functions");
+        //Example 1:
+        let color=function(name){
+            console.log(`Color Name: ${name}`);
+        }
+        color("Blue");
+
+        //Example 2:
+        let addn=function(i,j){
+            console.log(`Addition: ${i+j}`);
+        }
+        addn(4,6);
+
+        //Example 3:
+        let dis=function(age){
+            if(age>=18){
+                console.log(`Allowed to vote, age is: ${age}`);
+            }
+            else{
+                console.log(`Not Allowed to vote, age is: ${age}`);
+            }
+        }
+        dis(34);
+        console.log("");
+
+        // 3. ARROW FUNCTIONS
+        console.log("Arrow Functions");
+        // Example 1:
+        let subjects=() => {
+            console.log("1.SPOS");
+            console.log("2.TOC");
+            console.log("3.DBMS");
+            console.log("4.CNS");
+            console.log("");
+        }
+        subjects();
+
+        //Example 2:
+        companies=() => {
+            console.log("Google");
+            console.log("Microsoft");
+            console.log("");
+        }
+        companies();
+
+        //Example 3:
+        operations=(a,b) => {
+            console.log(a+b);
+            console.log(a-b);
+            console.log(a%b);
+            console.log(a/b);
+            console.log(a*b);
+        }
+        operations(10,5);
+        console.log("");
+
+        //4. IMMEDIATELY INVOKED FUNCTION EXPRESSIONS(IIFE)
+        console.log("IIFE Functions");
+        //Example 1:
+        (function() {
+            let x="Happy ";
+            let o=45;
+            console.log(`${x}${o}`);
+        })();
+
+        //Example 2:
+        (function(n){
+            let num=23;
+            if(n>num){
+                console.log(`${n} is greater!`);
+            }
+            else{
+                console.log(`${num} is greater!`);
+            }
+        })(10);
+
+        //Example 3:
+        (function(k,l){
+            let d=k-l;
+            if(d>0){
+                console.log(`${d} is positive.`);
+            }
+            else{
+                console.log(`${d} is negative.`);
+            }
+        })(45,78);
+        console.log("");
+
+        // 5. HIGH ORDER FUNCTIONS
+        console.log("High Order Functions");
+        // Example 1:
+        let arr=[2,4,6,8];
+        let narr=arr.map((element) => element+2);
+        console.log(narr);
+
+        //Example 2:
+        let marks=[34,56,70];
+        let nmarks=marks.map((element) => element/(marks.length));
+        console.log(nmarks);
+
+        //Example 3:
+        let subjs=['ABC','DEF'];
+        let nsubjs=subjs.map((element) => element+123);
+        console.log(nsubjs);
+        console.log("");
+
+        //6. CONSTRUCTOR FUNCTIONS
+         console.log("Constructor Functions");
+        //Example 1:
+        function person(name,age){
+            this.name = name;
+            this.age = age;
+        }
+        let user1=new person("Asha",14);
+        console.log(`Hey! My name is ${user1.name}  and I am ${user1.age} years old.`);
+
+        //Example 2:
+        function sum(i){
+            this.i=i;
+        }
+        let u1=new sum(6); 
+        console.log(`Number is ${u1.i}`)
+
+        //Example 3:
+        function flowers(name){
+            this.name=name;
+        }
+        let u=new flowers("Sun-flower");
+        console.log(`Flower name is: ${u.name}`);
+
+        // console.log("");
+    </script>
+</body>
+</html>

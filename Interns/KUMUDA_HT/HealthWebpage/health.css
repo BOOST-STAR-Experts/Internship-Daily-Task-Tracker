@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.container1{
+    height: 100;
+    width: 100;
+   
+}
+.nav-bar{
+   width: 100%;
+   height: 70px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background: yellow;
+    padding: 10px 30px;
+}
+
+ .nav-bar .title{
+    text-align: left;
+    color: rgba(22, 89, 165, 0.616);
+    font-size: 30px;
+    padding: 0;
+    margin-left:70px;
+}
+span{
+    color: red;
+    font-size: 30px;
+}
+.searchbar
+{   
+   float: right;
+}
+.searchbar input[type=text]
+{
+    padding: 6px;
+    margin-top: 8px;
+    border: none;
+    font-size: 17px;
+}
+.nav-bar button{
+    padding: 6px;
+    margin-top: 8px;
+    border: none;
+    background-color: blue ;
+    float: right;
+    cursor: pointer;
+    font-size: 17px;
+    color: white;
+}
+
+h4{
+    font-size:20px;
+    color:rgba(15, 57, 196, 0.616); 
+    padding: 20px;
+}
+.nav-bar .call{
+       padding: 10px;
+       text-align:justify;
+       right:20rem;
+    font-size: 15px;
+    color: black;
+}
+
+.nav-bar p{
+    position: absolute;
+    color:rgba(22, 108, 165, 0.616); 
+    font-size: 20px;
+    margin-top: 50px;
+}
+.plus{
+    color:rgba(60, 22, 165, 0.616);  ;
+   margin-left:90px;
+  font-size: 12px;
+}
+
+.nav-bar .plus span
+{
+    font-size: 25px;
+ 
+}
+
+.nav-bar1{
+    width: 100%;
+    height: 30px;
+    padding: 10px 20px;
+    align-items: right;
+}
+.nav-bar1 ul li
+{    
+   
+    text-align: center;
+    justify-content: space-between;
+    display:inline;
+    padding: 0px 15px;
+    margin: 15px;
+    
+}
+.nav-bar2{
+    background-color: rgba(22, 89, 165, 0.616); 
+    background-size: cover;
+    display:grid;
+    height:50px;
+    width:100%;
+    padding: 10px 30px;
+    margin: 15px;
+   }
+
+.menu li{
+    list-style: none;
+    display: inline;
+}
+
+.menu li a{
+text-decoration:none;
+padding: 10px 26px;
+color: white;
+transition: .4s all;
+font-size:20px;
+font-style:bold;
+}
+.menu .dropdown{
+    display:none;
+}
+.menu li a:hover
+{   
+    background-color: blue;
+    color: red;
+
+}
+.body-content{
+    margin: 0;
+    padding: 0;
+    background-image: url('images/Heart-check-up.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    
+}
+.body-content .container2{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    position: relative;
+}
+.container2 h1{
+color:black;
+font-size: 60px;
+text-align:justify;
+letter-spacing: 1.2px;
+justify-content: center;
+}
+.container2 p{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 1.2px;
+    font-style: bold;
+    line-height: 25px;
+    justify-content: center;
+}
+.container2 button{
+    background-color: red;
+    color: white;
+    font-size: 25px;
+    border: none;
+    padding: 10px;
+    justify-content: center;
+}
+.img2{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 300px;
+        cursor: pointer;
+    display: inline;
+}
+.img2 img:hover{
+    filter: grayscale(1);
+    transform: scale(1.03);
+}
+
+#emoji 
+{
+    position:relative;
+    border-radius: 25px;
+
+}
