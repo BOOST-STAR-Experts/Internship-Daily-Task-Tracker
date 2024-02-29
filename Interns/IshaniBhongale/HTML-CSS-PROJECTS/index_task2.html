@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Responsive Forms</title>
+
+    <!--CSS-->
+    <link rel='stylesheet' href="css/style.css">
+
+    <!--Boxicons CSS-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>  
+
+<body>
+    <section class="container forms">
+        <!--LOGIN FORM-->
+        <div class="form login">
+            <div class="form-content">
+                <header>Login</header>
+
+                <form action="#">
+                    <!--Email box-->
+                    <div class="field input-field">
+                        <input type="email" placeholder="Email" class="input">
+                    </div>
+                    <!--Password box-->
+                    <div class="field input-field">
+                        <input type="password" placeholder="Password" class="password">
+                        <i class='bx bxs-hide eye-icon'></i>
+                    </div>
+
+                    <div class="form-link">
+                        <a href="#" class="forgot-passowrd">Forgot password?</a>
+                    </div>
+
+                    <div class="field button-field">
+                        <button>Login</button>
+                    </div>
+                </form>
+                <div class="form-link">
+                    <span>Don't have an account? <a href="#" class="link signup-link">Signup</a> </span>
+                </div>
+            </div>
+
+            <div class="line"></div>
+            <div class="media-options">
+                <a href="#" class="field facebook">
+                    <i class='bx bxl-facebook facebook-icon' ></i>
+                    <span>Login with Facebook</span>
+                </a>
+            </div>
+
+            <div class="media-options">
+                <a href="#" class="field google">
+                    <img src="images/google.webp" alt="" class="google-img">
+                    <span>Login with Google</span>
+                </a>
+            </div>
+        </div>
+
+        <!--SIGNUP FORM-->
+        <div class="form signup">
+            <div class="form-content">
+                <header>Signup</header>
+
+                <form action="#">
+                    <!--Email box-->
+                    <div class="field input-field">
+                        <input type="email" placeholder="Email" class="input">
+                    </div>
+
+                    <div class="field input-field">
+                        <input type="password" placeholder="Create Password" class="password">
+                    </div>
+
+                    <!--Password box-->
+                    <div class="field input-field">
+                        <input type="password" placeholder="Confirm Password" class="password">
+                        <i class='bx bxs-hide eye-icon'></i>
+                    </div>
+
+                    <div class="field button-field">
+                        <button>Signup</button>
+                    </div>
+                </form>
+                <div class="form-link">
+                    <span>Already have an account? <a href="#" class="link login-link">Login</a> </span>
+                </div>
+            </div>
+
+            <div class="line"></div>
+            <div class="media-options">
+                <a href="#" class="field facebook">
+                    <i class='bx bxl-facebook facebook-icon' ></i>
+                    <span>Login with Facebook</span>
+                </a>
+            </div>
+
+            <div class="media-options">
+                <a href="#" class="field google">
+                    <img src="images/google.webp" alt="" class="google-img">
+                    <span>Login with Google</span>
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+    <!--Javascript-->
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+#CSS FILE
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4070f4;
+    column-gap: 35px;
+}
+
+.form{
+    position: relative;
+    background: white;
+    border-radius: 8px;
+    max-width: 420px;
+    width: 100%;
+    padding: 30px;
+}
+
+header{
+    font-size: 26px;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+}
+
+form{
+    margin-top: 25px;
+} 
+
+.form .field{
+    height: 40px;
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+    border-radius: 5px;
+}
+
+.field input,
+.field button{
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 15px;
+    font-weight: 400;
+    border-radius: 6px;
+}
+
+.field input{
+    outline: none;
+    border: 1px solid #cacaca;
+    padding: 0 15px;
+}
+.field input:focus{
+    border-bottom-width: 2px;
+}
+.eye-icon{
+    font-size: 16px;
+    color: #8b8b8b;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    padding: 5px;
+}
+.field button{
+    background-color: #0171d3;
+    color: #FFF;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.field button:hover{
+    background-color: #016dcb;
+}
+.form-link{
+    text-align: center;
+    margin-top: 8px;
+}
+
+.form-link span,
+.form-link a{
+    font-size: 14px;
+    font-weight: 400;
+    color: #232836;
+}
+
+.form a{
+    text-decoration: none;
+    color: #0171d3;
+}
+.form-content a:hover{
+    text-decoration: underline;
+}
+
+.line{
+    height: 1px;
+    width: 100%;
+    position: relative;
+    background-color: #d4d4d4;
+    margin: 36px 0;
+}
+.line::before{
+    content:'Or';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFF;
+    color: #8b8b8b;
+    padding: 0 15px;
+}
+
+.media-options a{
+    display: flex;
+    background-color: #4267b2;
+    align-items: center;
+    justify-content: center;
+}
+
+a.facebook{
+    background-color: #4267b2;
+    color: #FFF;
+    position: relative;
+}
+a.facebook .facebook-icon{
+    height: 28px;
+    width: 28px;
+    background-color: #FFF;
+    color: #0171d3;
+    font-size: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.facebook-icon,
+img.google-img{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+}
+
+img.google-img{
+    height: 20px;
+    width: 20px;
+    object-fit: cover;
+}
+a.google{
+    border: 1px solid #cacaca;
+    background-color: #FFF;
+    color: #8b8b8b;
+    position: relative;
+}
+a.google span{
+    color: #232836;
+    font-weight: 500;
+    opacity: 0.6;
+}
+
+@media screen and (max-width: 400px){
+    .form{
+        padding: 15px 10px;
+    }
+}

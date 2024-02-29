@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays in JS</title>
+</head>
+<body>
+    
+    <script>
+        //ARRAY DECLARATION IN JAVA-SCRIPT
+        //1. ARRAY LITERALS
+
+        //EXAMPLE 1
+        let c=[]; //EMPTY ARRAY
+        console.log(c);
+
+        //EXAMPLE 2
+        let a=["SPOS","TOC","DBMS","SPM","CNS"];
+        console.log(a);
+        console.log("The subjects are: "+ a); //PRINTING ELEMENTS COLUMN-WISE(ON SAME LINE)
+
+        //EXAMPLE 3
+        let b=["AI","ML","MATHS","PHY","AC"];
+        console.log("The subjects are: ");
+        for(let i in b){
+            console.log(i+ " "+b[i]); //PRINTING ELEMENTS ROW-WISE(ON NEXT LINE)
+        }
+
+        //EXAMPLE 4
+        let d=[10,20,30,40,50];
+        console.log(a+" "+d); //CONCATENATION OF ARRAYS
+        console.log("");
+
+        //2. ARRAY CONSTRUCTORS
+
+        //EXAMPLE 1
+        let e=new Array();
+        console.log(e);
+
+        //EXAMPLE 2
+        let f=new Array("Monday","Tuesday","Wednesday","Thursday");
+        console.log(f);
+
+        //EXAMPLE 3
+        let g=new Array("Friday","Saturday","Sunday");
+        console.log(f+","+g);
+        console.log("");
+
+        //INITIALIZING ARRAY WHILE DECLARING THE ARRAY
+        let roll=new Array(5);
+        roll[0]=34;
+        roll[4]=20;
+        roll[2]=56;
+        roll[3]=40;
+        roll[1]=14;
+        console.log("The Roll Nos. are: ");
+        console.log(roll);
+
+        console.log("The first element of array is: "+roll[0]); //ACCESSING FIRST ELEMENT OF ARRAY
+        console.log("The last element of array is: "+roll[roll.length-1]); //ACCESSING LAST ELEMENT OF ARRAY
+        console.log("");
+
+        //MODIFYING THE ARRAY ELEMENTS
+        console.log("Before Modification: ");
+        console.log(roll);
+        
+        roll[3]=67;
+        console.log("After Modification: ");
+        console.log(roll);
+
+    </script>
+
+</body>
+</html>

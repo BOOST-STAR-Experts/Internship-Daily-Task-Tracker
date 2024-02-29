@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch-Case Program</title>
+</head>
+<body>
+    <script>
+
+        console.log("Calculation of Area Program using Switch-Case");
+        function Area(ch){
+            switch(ch){
+            case 1:
+                console.log("Area of Square");
+                let x=3;
+                let as=x*x;
+                console.log("Area is: ",as);
+                break;
+            case 2:
+                console.log("Area of Rectangle");
+                let l=2,b=4;
+                let ar=l*b;
+                console.log("Area is: ",ar);
+                break;
+            case 3:
+                console.log("Area of Cuboid");
+                let m=4,n=8,o=10;
+                let ac=m*n*o;
+                console.log("Area is: ",ac);
+                break;
+            default:
+                console.log("Invalid Entry!");
+            }
+        }
+        
+        Area(1);
+        Area(2);
+        Area(3);
+        Area(10);
+        
+    </script>
+</body>
+</html>
