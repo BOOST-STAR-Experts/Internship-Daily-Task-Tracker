@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch API Example - Random Images</title>
+    <style>
+        body{
+            background-color: rgb(250, 244, 235);
+        }
+        h1{
+            text-align: center;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+        }
+        .gallery {
+          
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            grid-gap: 30px;
+            justify-content: center;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Random Images</h1>
+    <div class="container">
+    <div class="gallery" id="gallery"></div>
+    </div>
+
+    <script>
+        // Function to fetch random images from Unsplash API
+        function fetchImages() {
+            fetch('https://source.unsplash.com/random/200x200?sig=' + Math.random())
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.url;
+                })
+                .then(imageUrl => {
+                    const gallery = document.getElementById('gallery');
+                    const img = document.createElement('img');
+                    img.src = imageUrl;
+                    gallery.appendChild(img);
+                })
+                .catch(error => {
+                    console.error('Error fetching image:', error);
+                });
+        }
+
+        // Call the fetchImages function multiple times to get multiple images
+        window.onload = function() {
+            for (let i = 0; i < 10; i++) {
+                fetchImages();
+            }
+        };
+    </script>
+</body>
+</html>

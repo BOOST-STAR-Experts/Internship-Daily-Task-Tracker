@@ -20,10 +20,15 @@ You have collaborator access, so no need to create a pull request. Directly push
 
 2. **Create Your Folder:**
    - Navigate to the `Interns` directory.
-   - Create a new folder using your name as the folder name.
      ```bash
      cd Internship-Daily-Task-Tracker/Interns
-     mkdir YourName
+     ```
+   - Create a new folder using your name as the folder name.
+      ```bash
+      mkdir YourName
+      ```
+   - Now go to your name folder with the below code.
+     ```bash
      cd YourName
      ```
 
