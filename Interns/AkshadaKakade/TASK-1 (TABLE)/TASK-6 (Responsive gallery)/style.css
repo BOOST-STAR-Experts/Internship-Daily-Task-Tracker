@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+body{
+    min-height:100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(lightblue,rgba(255, 182, 193, 0.822));
+}
+.wrapper{
+    width: 80%;
+    padding: 30px 0;
+    text-align: center;
+}
+.header{
+    text-transform: uppercase;
+    line-height: 70px;
+    padding-bottom: 30px;
+    font-size: 50px;
+    color:crimson;
+    letter-spacing: 2px;
+    -webkit-text-stroke: 1px rgb(4, 4, 4);
+}
+.main-content{
+    width: 100%;
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    grid-column-gap: 15px;
+    gap:35px;
+}
+.main-content .box{
+    height: 250px;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 15px;
+    box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.36);
+    overflow: hidden;
+    border: 4px solid black;
+    border-radius: 24px;
+}
+.content{
+    padding: 10%;
+}
+.content h2{
+    font-family:'Sacramento';
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+.content p{
+    line-height:1.5;
+}
+.main-content .box::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+}
+.main-content .box:hover:before{
+    top: 0;
+    right: calc(100% - 5px);
+    z-index: 10;
+}
+.main-content .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.main-content .box .img-text{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    right: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.704);
+    transition: all  0.5s ease-in-out;
+}
+.main-content .box:hover .img-text{
+    top: 0;
+    right: 0;
+}

@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color: rgba(137, 43, 226, 0.41);
+}
+#loader{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #010101 url('https://i.gifer.com/OpOK.gif')
+	 no-repeat center center;
+      z-index: 99999;
+}
+.header{
+    text-align: center;
+    padding: 25px;
+}
+.header h1{
+    font-family: 'Protest Riot', sans-serif;
+    font-size: 48px;
+}
+.header p{
+    font-family: "protest Riot",'sans-serif';
+    font-size: 35px;
+    font-weight: 500;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 100px 100px 100px;
+    
+}
+.column{
+    flex:25%;
+    max-width: 25%;
+    /* border: 2px solid black; */
+}
+.images-hover{
+    height:auto;
+    overflow: hidden;
+    border: 6px solid  #ffff;
+    box-shadow: 10px 10px 20px rgba(255, 255, 255, 0.804), -10px -10px 20px rgba(255, 255, 255, 0.832);
+}
+.images-hover img{
+    vertical-align: middle; 
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: transform .5s ease;
+}
+.images-hover:hover img{
+    transform: scale(1.5);
+}
+@media screen and (max-width: 800px) {
+    .column{
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .column{
+        flex: 100%;
+        max-width: 100%;
+    }
+}
