@@ -1,0 +1,276 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+.face1{
+    height: 300px;
+    width: 300px;
+    position: relative;
+    background:yellow;
+    border-radius: 50%;
+    margin: auto;
+    }
+
+.face1 .eye1{
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: white;
+    left: 40px;
+    top: 70px;
+}
+.face1  .eye2
+{
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: white;
+    left: 160px;
+    top: 70px;
+}
+.face1 .eyeball1
+{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: black;
+    left: 75px;
+    top: 120px;
+    position: absolute;
+
+}
+.face1  .eyeball2
+{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: black;
+    left: 170px;
+    top: 120px;
+    position: absolute;
+}
+.face1  .eyeball1,.eyeball2{
+    animation:updown 4s ease-in-out infinite;
+}
+@keyframes updown{
+0%{
+transform:translateX(20px);
+}
+50%{
+    transform:translateX(-20px);
+    }
+}
+.face1  .mouth
+{
+height: 40px;
+width: 60px;
+left: 120px;
+top:210px;
+border-radius: 60px;
+position: absolute;
+background-color: black;
+
+}
+.face1  .tongue
+{
+    height: 40px;
+    width: 50px;
+    left: 125px;
+    top: 220px;
+    background-color: red;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: absolute;
+
+}
+.face1  .tongue{
+    animation:updown1 4s ease-in-out infinite;
+}
+@keyframes updown1{
+    0%{
+    transform:translateX(-20px);
+    }
+    0%{
+        transform:translateY(20px);
+        }
+        
+    }
+
+    .face2{
+        height: 300px;
+        width: 300px;
+        position:relative;
+        background:yellow;
+        border-radius: 50%;
+        margin:60px 100px;
+        left:auto ;
+        }
+
+    .face2 .eye1{
+           height: 80px;
+           width: 80px;
+          border-radius: 50%;
+           background-color: white;
+             position: absolute;
+          left: 40px;
+           top: 70px;
+            }
+            .face2 .eye2{
+                height: 80px;
+                width: 80px;
+               border-radius: 70%;
+                background-color: white;
+                  position: absolute;
+               left: 160px;
+                top: 70px;
+                 }       
+
+       .face2 .eyeball1
+       {
+    height:30px;
+    width: 30px;
+    background-color: black;
+    border-radius: 50px;
+    left: 62px;
+    top: 95px;
+    position: absolute;
+
+
+       }          
+
+       .face2 .eyebaall2
+       {
+    height:30px;
+    width: 30px;
+    background-color: black;
+    border-radius: 50px;
+    left: 182px;
+    top: 95px;
+    position: absolute;
+
+       }             
+       
+.face2  .mouth
+{
+height: 40px;
+width: 60px;
+left: 120px;
+top:210px;
+border-radius: 50px;
+position: absolute;
+background-color: black;
+
+}
+.face2 .nose
+{
+background-color: rgb(17, 1, 1);
+height: 30px;
+width: 20px;
+top: 155px;
+left: 132px;
+border-bottom-left-radius:5px;
+border-bottom-right-radius:3px;
+border-top-left-radius: 9px;
+border-top-right-radius: 8px;
+position: absolute;
+}
+
+.face3{
+height: 300px;
+width: 300px;
+background-color: yellow;
+border-radius: 50%;
+position: absolute;
+left: 75%;
+top:350px;
+}
+.face3 .eye1
+{
+    height: 80px;
+    width:80px;
+    border-radius: 50%;
+    background-color: white;
+position:absolute;
+top:70px;
+left:60px;
+
+}
+
+.face3 .eye2
+{
+    height: 80px;
+    width:80px;
+    border-radius: 50%;
+    background-color: white;
+position:absolute;
+top:70px;
+left:180px;
+}
+.face3 .eyeball1
+{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: rgb(20, 1, 1);
+    position: relative;
+    top:110px;
+    left:190px;
+}
+
+.face3 .eyeballl2
+{
+height:25px;
+width: 25px;
+background-color:rgb(7, 0, 0);
+border-radius: 50%;
+position: absolute;
+top:110px;
+right:205px;
+}
+
+.face3 .nose
+{
+    height: 15px;
+    width: 45px;
+    border-top-left-radius: 70%;
+    background-color: rgb(236, 17, 28);
+    top:180px;
+   left: 90px;
+    position:absolute;
+}
+
+
+    .face3  .nose{
+        animation:leftright 2s ease-in-out infinite;
+    }
+
+    @keyframes leftright{
+        0%{
+        transform:translateX(-20px);
+        }
+        0%{
+            transform:translateX(20px);
+            }
+            
+        }
+
+.face3  .mouth 
+{
+height: 20px;
+width: 100px;
+left: 100px;
+top:230px;
+border-top-right-radius: 50px;
+border-top-left-radius: 50px;
+position: absolute;
+background-color: black;
+
+}
