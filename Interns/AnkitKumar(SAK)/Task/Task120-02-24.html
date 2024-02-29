@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table{
+            width: 100%;
+        }
+        table,th,td{
+            /* margin:2px; */
+            padding: 10px;
+            border:2px solid Black;
+            text-align: center;
+            
+        }
+        th{
+            font-size: 20px;
+        }
+        header h1{
+            text-align: center;
+        }
+        tr{
+            font-size:18px;
+        }
+        #me{
+            position: absolute;
+            top: 30%;
+            left:30%;
+            font-size: 300px;
+            transform: rotate(-25deg);
+            opacity: 0.3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Task-1 Day2 20-02-2024</h1>
+    </header>
+    <table>
+       <tr>
+        <th colspan="2">Schedule</th>
+        <th colspan="3">Product</th>
+       </tr>
+       <tr>
+        <th rowspan="6">Day</th>
+        <th rowspan="6">Time</th>
+        <th rowspan="6">Item</th>
+        <th colspan="2" rowspan="3">Shipping Details</th>
+       </tr>
+       <tr></tr>
+       <tr></tr>
+       <tr>
+        <th rowspan="3">Quantity</th>
+        <th rowspan="3">Cost</th>
+       </tr>
+       <tr></tr>
+       <tr></tr>
+<!-- For Monday row merge 3  -->
+       <tr>
+        <td rowspan="6">Monday</td>
+        <td rowspan="3">10:00 AM</td>
+        <td>Bag</td>
+        <td>10</td>
+        <td rowspan="3">2000.00</td>
+       </tr>
+
+       <tr>
+        <td>T-Shirt</td>
+        <td>10</td>
+       </tr>
+
+       <tr>
+        <td>Notebook</td>
+        <td>20</td>
+       </tr>
+       <tr>
+        <td rowspan="2">1:00 PM</td>
+        <td>T-Shirt</td>
+        <td>20</td>
+        <td rowspan="2">1300.00</td>
+       </tr>
+       <tr>
+        <td>Notebook</td>
+        <td>15</td>
+       </tr>
+       <tr>
+        <td>5:00 PM</td>
+        <td>Bag</td>
+        <td>8</td>
+        <td>800</td>
+       </tr>
+
+    <!-- for tuesday row span 5 -->
+       <tr>
+        <td rowspan="5">Tuesday</td>
+        <td rowspan="3">12:00 PM</td>
+        <td>Bag</td>
+        <td>8</td>
+        <td rowspan="3">2100</td>
+       </tr>
+       <tr>
+        <td>T-Shirt</td>
+        <td>12</td>
+       </tr>
+       <tr>
+        <td>Notebook</td>
+        <td>22</td>
+       </tr>
+       <tr>
+        <td rowspan="2">1:00 PM</td>
+        <td>T-Shirt</td>
+        <td>10</td>
+        <td rowspan="2">600</td>
+       </tr>
+       <tr>
+        <td>Notebook</td>
+        <td>10</td>
+       </tr>
+    </table>
+    <span id="me">SAK</span>
+</body>
+</html>

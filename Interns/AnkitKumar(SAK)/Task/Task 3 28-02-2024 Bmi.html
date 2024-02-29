@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI CALCULATOR</title>
+    <STYLE>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .flexrow {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .flexcol {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 1160px;
+            margin: 0 auto;
+        }
+
+        nav {
+            background-color: greenyellow;
+            box-shadow: 0px 0px 6px 4px black;
+        }
+
+        .nav h1 {
+            font-size: 30px;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .inputForm {
+            height: 90vh;
+            width: 100%;
+            background-color: black;
+            overflow-y: hidden;
+        }
+
+        .form {
+            border: 2px solid rgb(220, 249, 220);
+            gap: 20px;
+            padding: 6rem;
+            justify-content: space-around;
+        }
+
+        .btn {
+            color: greenyellow;
+            padding: 0.4em 2rem;
+            border: 1px solid greenyellow;
+            text-align: center;
+            cursor: pointer;
+            font-size: 1em;
+            font-weight: 600;
+            width: 100%;
+            transition:all 200ms ease-in;
+        }
+        .btn:hover{
+            background-color: greenyellow;
+            color:black
+        }
+
+        .height,
+        .weight {
+            width:100%;
+            background-color: white;
+            padding: .5rem;
+        }
+
+        .height input,
+        .weight input {
+            outline: none;
+            border: none;
+            /* color:greenyellow; */
+            font-weight: 600;
+            font-size:1rem;
+        }
+    </STYLE>
+</head>
+
+<body>
+    <Nav>
+        <div class="nav container">
+            <h1>BoostStar BMI CALCULATOR</h1>
+        </div>
+    </Nav>
+    <section class="inputForm flexcol">
+        <form class="container flexcol form">
+            <div class="height flexrow">
+                <input type="number" placeholder="Enter Your Height" id="hgt">
+                <select name="weight" id="hgtUnit">
+                    <option value="c">Cm</option>
+                    <option value="m">Mtr</option>
+                    <option value="f">Feet</option>
+                </select>
+            </div>
+            <div class="weight">
+                <input type="number" placeholder="Enter Your Weight" id="wgt">
+            </div>
+            <span class="btn" onclick="alertBmi()">Submit</span>
+        </form>
+    </section>
+    <script>
+
+        const alertBmi = () => {
+            let hgt = document.getElementById("hgt").value;
+            let unithgt=document.getElementById("hgtUnit").value;
+            let wgt = document.getElementById("wgt").value;
+            let convheight;
+            if(unithgt==="c")
+            {
+                convheight=hgt/100;
+                console.log(convheight);
+            }
+            else if(unithgt==="f")
+            {
+                convheight=hgt/3.281;
+                console.log(convheight);
+            }
+            else{
+                convheight=hgt;
+            }
+            let res=wgt/(convheight*convheight);
+            if(res>=18.6 && res<=24.9)
+            {
+                alert(`Hello Dear You are Healthy and Stay fit. And your Body Mass Index is ${res}`);
+
+            }
+            else if(res<18.5)
+            {
+                alert(`Hello Dear you are underweight. Put your weight On.And your Body Mass Index is ${res}`);
+            }
+            else if(res>=25 && res<=25.9)
+            {
+                alert(`Hello Dear you are OverWeight. Loose your weight. And your Body Mass Index is ${res}`);
+            }
+            else{
+                alert(`You are Obese. And your Body Mass Index is ${res}`);
+            }
+        }
+    </script>
+</body>
+
+</html>

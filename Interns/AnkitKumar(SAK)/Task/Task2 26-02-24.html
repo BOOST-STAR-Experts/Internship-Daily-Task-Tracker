@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emoji</title>
+    <style>
+        .border {
+            height: 400px;
+            width: 400px;
+            /* border:2px solid black; */
+            /* background-color: yellow; */
+            margin: 0 auto;
+        }
+
+        .circle {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            background-color: yellow;
+            height: 300px;
+            width: 300px;
+            /* display: inline-block; */
+            border-radius: 50%;
+        }
+
+        .eye {
+            position: relative;
+            height: 50px;
+            padding: 10px;
+            margin-top: 50px;
+            margin-right: 10px;
+            width: 50px;
+            background-color: red;
+            /* margin:auto */
+            display: inline-block;
+            border-radius: 50%;
+        }
+
+        .eyecircle {
+            display: flex;
+            position: absolute;
+            bottom: 3px;
+            left: 30px;
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            overflow: hidden;
+            /* z-index: 22; */
+            background-color: black;
+            animation: blink 1s linear infinite;
+        }
+
+        @keyframes blink {
+            0% {
+                background-color: rgb(255, 255, 255);
+            }
+
+        }
+        #mouth{
+            display: inline-block;
+            height:80px;
+            position: absolute;
+            bottom:20px;
+            width:80px;
+            border-radius: 50%;
+            background-color: black;
+            animation: closeMouth 1.3s linear infinite;
+        }
+        @keyframes closeMouth {
+            0% {
+                border-radius:50%;
+                width:80px;
+                height:80px;
+            }
+            25% {
+                border-radius:40%;
+                width:85px;
+                height:85px;
+            }
+            75% {
+                border-radius:40%;
+                width:93px;
+                height:93px;
+            }
+            100% {
+                border-radius:40%;
+                width:100px;
+                height:100px;
+            }
+
+        }
+        h1{
+            text-align: center;
+            font-size: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Emoji Task 2 Date 26 Feb 2024</h1>
+    <div class="border">
+        <span class="circle">
+            <span class="eye">
+                <span class="eyecircle"></span>
+            </span>
+            <span class="eye">
+                <span class="eyecircle"></span>
+            </span>
+            <span id="mouth"></span>
+        </span>
+    </div>
+</body>
+
+</html>

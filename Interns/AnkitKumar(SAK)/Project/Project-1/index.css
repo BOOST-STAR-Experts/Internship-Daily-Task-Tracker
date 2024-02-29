@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* utility classes */
+.flex-row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-between;
+    /* gap:10px;     */
+}
+.flex-col{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: space-around;
+    justify-content: center;
+}
+.container{
+    max-width:1100px;
+    margin-inline: auto;
+}
+.navbar{
+    background-color: yellow;
+    height:60px;
+}
+/* search bar */
+.search input{
+    outline: none;
+    padding:3px;
+    height: 25px;
+    width:400px;
+    text-align: center;
+    border: none;
+}
+.search span{
+    margin:2px;
+}
+input:focus{
+    outline: none;
+}
+.callus div a{
+    font-size: 20px;
+    font-weight: 900;
+    text-decoration: none;
+}
+.callus div span{
+    font-size: 12px;
+}
+/* third nav */
+.thirdNav{
+    background-color: rgb(63, 63, 171);
+}
+.thirdNav div ul{
+    list-style: none;
+    color: white;
+}
+.thirdNav div ul li{
+    padding:0.5rem;
+}
+/* Banner Image */
+.bannerImage{
+    position: relative;
+    background-image: url("./Image/bannerImage.jpg");
+    width:100%;
+    height: 450px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* banner text under banner Image */
+.bannerText{
+    height: 400px;
+}
+.bannerText h2{
+    font-size:50px;
+    color: white;
+    font-weight: 900;
+}
+.bannerText p{
+    margin-top:10px;
+    font-size: 18px;
+    color: rgb(244, 244, 244);
+    font-style: italic;
+    line-height:0.7cm;
+}
+.bannerText span{
+    display: inline-block;
+    width:100px;
+    height:30px;
+    color:white;
+    margin-top:10px;
+    padding:5px;
+    text-align: center;
+    background-color: red;
+    box-shadow: 0px 0px 20px 6px black;
+}
