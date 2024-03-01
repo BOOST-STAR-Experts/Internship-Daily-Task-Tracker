@@ -1,0 +1,93 @@
+        .container1{
+            height: 20vw;
+            width: 21vw;
+            background-color: yellow;
+            border-radius: 26vw;
+            display: inline-block;
+            border:2px solid black;
+        }
+        .eye1{
+            width: 3vw;
+            height: 3vw;
+            background-color: pink;
+            margin-top: 5vw;
+            margin-left: 4vw;
+            display: inline-block;
+            border-radius: 10vw;
+            border:2px solid black;
+        }
+        .eye2{
+            width: 3vw;
+            height: 3vw;
+            background-color: pink;
+            margin-top: 3vw;
+            margin-left: 7vw;
+            display: inline-block;
+            border-radius: 10vw;
+            border:2px solid black;
+        }
+        .iris{
+            height: 1.3vw;
+            width: 1.4vw;
+            background-color: black;
+            display: inline-block;
+            margin-top: 1.4vw;
+            margin-left: 1vw;
+            border-radius: 2vw;
+            border: 2px solid white;
+        }
+        .mouth{
+            height: 4vw;
+            width: 7vw;
+            background-color: rgb(163, 81, 81);
+            display: inline-block;
+            margin-left: 7vw;
+            margin-top: 4.3vw;
+            border-radius: 0vw 0vw 107vw 116vw;
+            border:2px solid black;
+        }
+        /* mouth line */
+        .mouth2{
+            height: 0.2vw;
+            background-color:brown;
+            /* border: 2px solid brown; */
+            width: 8.5vw;
+            margin-top: 4.4vw;
+            margin-left: 6vw;
+            
+        }
+        /* mouth line */
+        .mouth1{
+            height: 0.2vw;
+            background-color:brown;
+            width: 4.5vw;
+            margin-top: 1.7vw;
+            margin-left: 5vw;
+            transform: rotate(55deg);
+            /* border: 2px solid brown; */
+
+        }
+        /* mouth line */
+        .mouth3{
+            height: 0.2vw;
+            background-color: brown;
+            width: 4.5vw;
+            margin-top: -0.05vw;
+            margin-left: 11.2vw;
+            transform: rotate(-59deg);
+
+          }
+        /* mouth line */
+          .mouth4{
+            height: 0.2vw;
+            background-color: brown;
+            width: 4.0vw;
+            margin-top: 1.5vw;
+            margin-left: 8.4vw;
+            rotate: 5deg;
+
+          }
+          
+
+        
+        
