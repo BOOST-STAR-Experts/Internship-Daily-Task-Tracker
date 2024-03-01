@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI CALCULATOR</title>
+</head>
+<body>
+    <script>
+        let weight= prompt("Enter the weight(in kg)");
+        let height=prompt("Enter the height(in meters)");
+        let bmi=weight/(height**2);
+        let cat;
+        if(bmi<=18.5){
+            cat="Underweight";
+        }
+        else if (18.5< bmi <25) {
+            cat="Healthy";
+        }
+        else if(25 < bmi <=26){
+            cat="Overweight";
+        } 
+        else {
+            cat="Obese";
+        }
+        document.write("Weight: "+weight);
+        document.write("<br> Height: "+height);
+        document.write("<br> Your Body Mass Index is: "+bmi+" and you are "+cat);
+    </script>
+</body>
+</html>
