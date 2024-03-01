@@ -2,9 +2,11 @@
 
 Welcome to the Internship-Daily-Task-Tracker Repository! 🚀
 
-## Description:
+## Our Awesone Contributors:
 
-This repository is for BOOST STAR Experts interns to log daily tasks. Each intern creates a personal folder and updates task files day by day. Perfect for beginners to showcase progress and foster collaborative learning. Happy coding! 🌟
+<a href = "https://github.com/BOOST-STAR-Experts/Internship-Daily-Task-Tracker/graphs/contributors">
+  <img src = "https://contrib.rocks/image?repo=BOOST-STAR-Experts/Internship-Daily-Task-Tracker"/>
+</a>
 
 ## Note:
 You have collaborator access, so no need to create a pull request. Directly push your changes to the main branch. Happy coding! 🚀
