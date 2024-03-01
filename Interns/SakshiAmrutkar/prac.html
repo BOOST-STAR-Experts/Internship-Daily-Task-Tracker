@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Practice </title>
+	</head>
+
+	<body>
+		<script>
+			//Simple example
+			console.log("Hoisting Concept");
+			var a = 10;
+			console.log(a);
+
+			//Declaration
+			b = 30;
+			console.log(b);
+			var b;
+
+			//initialization
+			var c;
+			console.log(c);
+			c = 40;
+
+			console.log("Implicit-type conversion");
+			var a = 3;
+			var c = 7
+			var b = '3';
+			console.log(a+c+b); //103
+			console.log(a-c);
+			console.log(a-c-b); //-7
+
+
+			console.log("NaN");
+			console.log(typeof(NaN));
+			console.log(Boolean(NaN));
+			console.log(isNaN(123));
+			console.log(isNaN("Sakshi"));
+
+
+			console.log("***Function***");
+			console.log("Named function");
+			function myfunction()
+			{
+				console.log("Hello!");
+			}
+			myfunction();
+
+			console.log("Anonymous function");
+			let greet = function(name)
+			{
+				console.log("Hello ${name}");
+			}
+			greet("Boost");
+
+			let greet1 = (a , b) => console.log(a+b);
+			greet1("Hello",3);
+
+			(function()
+			{
+				console.log("IIEF");
+			}) ();
+
+
+			var a = 10;
+			var b = "10";
+			console.log(a == b);
+			console.log(a === b);
+
+			//array
+			var a = [1,2,3,4];
+			//Without for loop
+			console.log(a);
+
+			//with for loop
+			for(var i =0;i<a.length;i++)
+			{
+				console.log(a[i]);
+			}
+
+			var b = new Array(3);
+			b[0]=11;
+			b[1]=21;
+
+			console.log(b);
+			for(var i =0;i<b.length;i++)
+			{
+				console.log(b[i]);
+			}
+
+			//Null and undefined
+			console.log(typeof(null));
+			console.log(typeof(undefined));
+
+			console.log(null == undefined); // true
+			console.log(null === undefined); //false
+
+			let num1 = null;
+			let num2 = 3;
+			console.log(num1+num2);
+
+			let num3 ;
+			console.log(num3+num2);
+
+		</script>
+	</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Object</title>
+	</head>
+
+	<body>
+		<script>
+			/******Example 1 ************
+			   Creating and accesing object properties*/
+			const employee = {
+				firstname : "Radha",
+				department : "Developer",
+				salary : 25000 ,
+				greet : function()
+				{
+					return "HELLO " + this.firstname ; 
+				}
+			};
+
+			console.log(employee);
+			console.log("firstname: " , employee.firstname);
+			console.log("department: ", employee.department);
+			console.log("salary: ", employee.salary);
+			console.log(employee.greet());
+
+
+			/**********Example 2***************
+			constructor function **************/
+			function Car(make, model, year) 
+			{
+    			this.make = make;
+    			this.model = model;
+    			this.year = year;
+			}
+
+			let myCar = new Car("Honda", "Civic", 2019);
+
+			console.log("My car: ", myCar);
+
+
+
+			/************ Example 3 ************
+			Adding and deleting properties *****/
+
+			const faculty = {
+				firstname : "Radha",
+				department : "Developer",
+				salary : 25000 ,
+				greet : function()
+				{
+					return "HELLO " + this.firstname ; 
+				}
+			};
+
+			faculty.subject = "Web-technology";
+			delete faculty.salary;
+
+			console.log(faculty);
+
+			/************ Example 4 *********
+			Object Methods ****************/
+			let calculator = 
+			{
+    			add: function (a, b) 
+    			{
+        			return a + b;
+    			},
+    			subtract: function (a, b) 
+    			{
+        			return a - b;
+    			}
+			};
+
+			console.log("Sum: " + calculator.add(5, 3));
+			console.log("Difference: " + calculator.subtract(10, 4));
+
+			/*********** Example 5 *********
+			Looping through object properties */
+			let person = 
+			{
+				{
+    				firstname : "Radha",
+    				lastname :"Patil",
+    				age : 30
+    			}
+
+			};
+
+			for (let member in person) 
+			{
+    			console.log(member + ": " + person[member]);
+			}
+
+		</script>
+	</body>
+</html>

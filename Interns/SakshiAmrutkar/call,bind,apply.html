@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Call , bind and apply </title>
+	</head>
+
+	<body>
+		<script>
+			let detail = {
+				name :"Sakshi",
+				age : 20 ,
+				designation : "TE" ,
+				print : function(state , country)
+				{
+					console.log(this.name);
+				}
+			};
+			detail.print();
+			let detail1 = {
+				name :"Mansi",
+				age : 20 ,
+				designation : "TE" ,
+			};
+			//function borrowing 
+			detail.print.call(detail1 , "India" ,"MH");
+
+
+			//Outside function
+			function myfunction(country , state)
+			{
+				console.log(this.name ,country , state);
+			}
+
+			let student = 
+			{
+				name : "Priya",
+				marks : 34,
+			};
+
+			let student1 =
+			{
+				name : "sush",
+				marks : 80,
+			};
+			//call
+			myfunction.call(student,"India" , "MH"); 
+			//apply
+			myfunction.apply(student1,["US" , "UK"]);
+			//bind
+			let value = myfunction.bind(student,"India" , "MH"); 
+			value();
+
+		</script>
+	</body>
+
+</html>

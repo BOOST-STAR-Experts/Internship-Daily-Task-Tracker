@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Function </title>
+	</head>
+
+	<body>
+		<script>
+			//*************** Prime Number ************************//
+			console.log("***Named Function***");
+			console.log("1)Prime Number");
+			function prime(a)
+			{
+				var flag = 0;
+				for(var i =0 ; i<= a ; i++)
+				{
+					if (a%i == 0)
+					{
+						flag += 1;
+					}
+				}
+
+				if(flag == 2)
+				{
+					console.log(a ," is a Prime Number");
+				}
+				else
+				{
+					console.log(a ," is not a Prime Number");
+				}
+			}
+			
+			prime(9);
+			prime(5);
+
+
+			console.log("***Anonymous function***");
+			var prime1 = function (a)
+			{
+				var flag = 0;
+				for(var i =0 ; i<= a ; i++)
+				{
+					if (a%i == 0)
+					{
+						flag += 1;
+					}
+				}
+
+				if(flag == 2)
+				{
+					console.log(a ," is a Prime Number");
+				}
+				else
+				{
+					console.log(a ," is not a Prime Number");
+				}
+			}
+
+			prime1(9);
+			prime1(5);
+
+			console.log("***Array function***");
+			let prime2 = (a) =>
+			{
+				var flag = 0;
+				for(var i =0 ; i<= a ; i++)
+				{
+					if (a%i == 0)
+					{
+						flag += 1;
+					}
+				}
+
+				if(flag == 2)
+				{
+					console.log(a ," is a Prime Number");
+				}
+				else
+				{
+					console.log(a ," is not a Prime Number");
+				}
+			}
+
+			prime2(17);
+			prime2(10);
+
+			console.log("***Immediately Invoked Function Expression (IIFE)***");
+			(function(a)
+			{
+				var flag = 0;
+				for(var i =0 ; i<= a ; i++)
+				{
+					if (a%i == 0)
+					{
+						flag += 1;
+					}
+				}
+
+				if(flag == 2)
+				{
+					console.log(a ," is a Prime Number");
+				}
+				else
+				{
+					console.log(a ," is not a Prime Number");
+				}
+			}
+			) (21);
+
+
+			//******** Factorial Program *********//
+			console.log("2)Factorial Program");
+			console.log("Named function");
+			function fact(a)
+			{
+				if(a == 0)
+				{
+					console.log("Factorial of ",a," is 1");
+				}
+				else
+				{
+					let f = 1;
+					for(var i =1; i<=a; i++)
+					{
+						f *= i ;
+					}
+					console.log("Factorial of ",a," is ",f);
+				}
+			}
+			fact(3);
+
+
+			console.log("Anonymous function");
+			let fact1 = function (a)
+			{
+				if(a == 0)
+				{
+					console.log("Factorial of ",a," is 1");
+				}
+				else
+				{
+					let f = 1;
+					for(var i =1; i<=a; i++)
+					{
+						f *= i ;
+					}
+					console.log("Factorial of ",a," is ",f);
+				}
+			}
+			fact1(4);
+
+			console.log("***Array function***");
+			let fact2 = (a) => 
+			{
+				if(a == 0)
+				{
+					console.log("Factorial of ",a," is 1");
+				}
+				else
+				{
+					let f = 1;
+					for(var i =1; i<=a; i++)
+					{
+						f *= i ;
+					}
+					console.log("Factorial of ",a," is ",f);
+				}
+			}
+			fact2(5);
+
+			console.log("***Immediately Invoked Function Expression (IIFE)***");
+			(function(a)
+			{
+				if(a == 0)
+				{
+					console.log("Factorial of ",a," is 1");
+				}
+				else
+				{
+					let f = 1;
+					for(var i =1; i<=a; i++)
+					{
+						f *= i ;
+					}
+					console.log("Factorial of ",a," is ",f);
+				}
+			}
+			) (6);
+
+
+			//************ 3) Sum of 'n' natural number  *************
+			console.log("Named function");
+			function p1(n)
+			{
+				var sum ;
+				sum = (n*(n+1))/2;
+				console.log("Sum of first ",n," natural number : ",sum);
+			}
+			p1(3);
+
+			console.log("Anonymous function");
+			let p2 = function(n)
+			{
+				var sum ;
+				sum = (n*(n+1))/2;
+				console.log("Sum of first ",n," natural number : ",sum);
+			}
+			p2(4);
+
+			console.log("***Array function***");
+			let p3 = (n) =>
+			{
+				var sum ;
+				sum = (n*(n+1))/2;
+				console.log("Sum of first ",n," natural number : ",sum);
+			} 
+			p3(5);
+
+			console.log("***Immediately Invoked Function Expression (IIFE)***");
+			(function(n)
+			{
+				var sum ;
+				sum = (n*(n+1))/2;
+				console.log("Sum of first ",n," natural number : ",sum);
+			}
+			) (6);
+
+
+			//********** High Order Function **********
+			console.log("Program 1");
+			const arr = [1, 2, 3, 4, 5];
+			const output = arr.map((element) => element += 10);
+			console.log("Original Array: ",arr); 
+			console.log("Modified Array: ",output); 
+
+			console.log("Program 2");
+			const arr1 = [11, 12, 30, 43, 15];
+			const output1 = arr1.filter(element => element % 2 == 0 );
+			console.log("Even Number:" ,output1);
+
+			console.log("Program 3");
+			const arr2 = [11, 12, 30, 43, 15];
+			const output2 = arr1.filter(element => element % 2 != 0 );
+			console.log("Odd number: ", output2);
+
+		</script>
+	</body>
+</html>

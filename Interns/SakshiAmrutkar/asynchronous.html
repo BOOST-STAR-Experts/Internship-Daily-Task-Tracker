@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Asynchronous Programming</title>
+	</head>
+
+	<body>
+		<script>
+		setTimeout(()=> {
+			for(var i =0;i<10;i++)
+			{
+				console.log(i);
+			}
+		},100);
+		console.log("Done printing");
+
+		/*Without setTimeout() function
+		for(var i =0;i<10;i++)
+		{
+			console.log(i);
+		}
+		console.log("Done printing");*/
+
+		//callback
+		function calculator(a,b,sum)   
+		{
+			sum(a,b);
+		}
+
+		function sum(a,b)
+		{
+			console.log("Sum = ",a+b);
+		}
+
+		calculator(2,2,sum);
+
+
+		//callback function with setTimeout
+		function greet()
+		{
+			console.log("Good Morning");
+		}
+
+		function name()
+		{
+			console.log("Boost star");
+		}
+		//calling the function
+		setTimeout(greet , 2000);
+		name();
+
+		//Promise
+
+		let promise = new Promise((resolve,reject) => {
+			console.log("This is Promise");
+			resolve(); // fulfilled*/ 
+			/* reject("hello"); // rejected */
+		})
+
+
+		//async-await
+		async function hello()
+		{
+			console.log("Hello World!!!");
+		}
+		hello();
+
+		</script>
+
+	</body>
+
+</html>

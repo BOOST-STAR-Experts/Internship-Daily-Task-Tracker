@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> BMI program</title>
+	</head>
+
+	<body>
+		<script>
+		
+			/*Problem statement :-
+			Write a JS program that calculates the BMI and 
+			reports the BMI category as per following table
+			*/
+			
+			var weight = parseFloat(prompt("Enter weight of a person (Kg) : "));
+			var height = parseFloat(prompt("Enter height of a person (m) : "));
+			var BMI = weight / (height * height);
+			
+			if(BMI <= 18.5)
+			{
+				console.log("Your Body Mass Index is : ",BMI," and you are Underweight");
+			}
+			if(BMI >= 18.6 && BMI <= 24.9 )
+			{
+				console.log("Your Body Mass Index is : ",BMI," and you are Healthy");
+			}
+			if(BMI >= 25 && BMI <= 25.9 )
+			{
+				console.log("Your Body Mass Index is : ",BMI," and you are Overweight");
+			}
+			if(BMI >= 30 )
+			{
+				console.log("Your Body Mass Index is : ",BMI," and you are Obese");
+			}
+
+		</script>
+	</body>
+
+</html>

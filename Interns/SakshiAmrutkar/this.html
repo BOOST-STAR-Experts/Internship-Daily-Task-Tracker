@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Practice </title>
+	</head>
+
+	<body>
+		<script>
+			//1) By itself
+				console.log(this);
+
+			//2) Inside Object Method
+				var obj ={
+					name : "sakshi" ,
+					getname : function()
+					{
+						console.log(this.name);
+					}
+				}
+				obj.getname();
+
+			//3) Inside function			
+			function show()
+			{
+				console.log(this);
+			}
+			show();
+
+			//USe of strict mode
+			function my()
+			{
+				"use strict";
+				console.log(this);
+			}
+			my();
+		</script>
+	</body>
+
+</html>

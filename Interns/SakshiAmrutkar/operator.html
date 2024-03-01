@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Opeartor </title>
+	</head>
+
+	<body>
+		<script>
+		//Arithmetic Operators
+		console.log("Arithmetic Operators: ");
+		let a = 10;
+		let b = 2;
+		console.log("a = ",a);
+		console.log("b = ",b);
+
+		console.log("Addition: ", a+b);  //Addition
+		console.log("Subtaction: ",a-b); //Subtraction
+		console.log("Multiplication: ",a*b); //Multiplication
+		console.log("Exponential: ", a**b); //Exponential
+		console.log("Division: ",a/b); //Division
+		console.log("Modulus: ",a%b); //Modulus
+
+		//Increment 
+		console.log("Postfix-Increment:" ,a++);
+		console.log("Prefix-Increment: ",++a);
+		console.log("Prefix-Increment: ",++b);
+		console.log("Postfix-Increment:" ,b++);
+
+		let c = 20;
+		c++;
+		console.log(c++); //Result :- 21;
+		console.log(c--); //22
+
+		let d = 30;
+		++d;
+		console.log(++d); //Result :- 32;  
+		console.log(--d); //31
+
+
+		//Decrement 
+		let p = 50;
+		let q = 60;
+		console.log("Postfix-Decrement: ",p--);  //50
+		console.log("Prefix-Decrement: ", --p);  //48
+		console.log("Prefix-Decrement: ",--q);   //59
+		console.log("Postfix-Decrement: ",q--); //59
+
+
+		//Assignment Operator
+		console.log("Assignment Operator");
+		console.log("value of a= ", a= 10);
+		console.log("+= : ", a+=5); //(a + 5=15) 
+		console.log("Value of a = :", a);
+		console.log("-= : ", a-=5); //(a - 5 = 10)
+		console.log("*= : ", a*=5); //(a*5 = 50)
+		console.log("/= : ",a/=5); // (a / 5 = 10)
+		console.log("%= : ",a%=5); //a%5 = 0
+		console.log("Value of a = :", a);
+		console.log("**=: ",a**=5); //a**5 = 0
+		console.log("Value of a = :", a);
+
+		//Comparison Operator
+		console.log("Comparison Operator");
+		let u = 10;
+		let v = 10;
+		let w = "10";
+		console.log("Equal to: " ,u == w); //true;
+		console.log("Equal value and equal data type: ", u=== w ); //false
+		console.log("Equal value and equal data type: ", u === v); //true
+		console.log("Not equal: ", u != w); // false
+		console.log("Not equal value or not equal type: " , u!==w); //true
+		console.log("Not equal value or not equal type: ", u!==v) ; //false
+		console.log("Greter than: ",u>v); //false
+		console.log("Less than: ",u<v );	//false
+		console.log("Greater than or equal to: ",u>=v); //true
+		console.log("Less than or equal to :" ,u<=v );  //true
+		(u == v) ? console.log("Equal to") : console.log("Not eqaul to");
+
+		//String Operator
+		console.log("String Operator");
+		console.log("String comaprison:" , "d" < "f"); //true;
+		console.log("20 < 40" , "20" < "40");  //Doubt
+		console.log("Hello"+ " " + "World!!"); //string addition
+		let k = 10;
+		let l = 20;
+		let m = "30";
+		console.log(k+l+m); //3030
+
+		let h = "10";
+		let i = 20;
+		let j = 30;
+		console.log(h+i+j); //102030
+
+		//Logical Operator
+		console.log("Logical Operator")
+		console.log("AND operator : " , 10 < 20 && 30 < 50); // true
+		console.log("AND operator : " ,10 > 20 && 30 < 50); // false
+		console.log("OR operator : " ,10 > 20 || 30 < 50); //true
+		console.log("OR operator : " ,10 > 20 || 30 > 50); //false
+		console.log("NOT operator :" ,!(10==20)); //true
+
+		//Bitwise operator
+		console.log("Bitwise operator")
+		console.log("And : ", 7 & 3); //0111 & 0011 => 0011(3)
+		console.log("Or : ", 7 | 3); //0111 | 0011 => 0111(7)
+		console.log("Xor : ", 7 ^ 3); // 0111 ^ 0011 => 0101(4)
+		console.log("Not :" , ~7) ; // 7=>0111 , ~(0111)=>(1000) , ~(1000)=>(0111) ,0111=>7 , 7+1 = -8;
+		console.log("Not :" , ~5); 
+		console.log("Not :" , ~3); // 3=>0011 , ~(0011) => (1100) , ~(1100)=>0011 , 0011=>3 , 3+1 = -4
+		console.log("Not :" , ~(-3)); // Find 2's complement of 3 and invert bits (result := 2)
+		console.log("Bitwise left shift: ", 4 << 2); //4=>0000 0100 //left shift by 2 position=>0001 0000(16)
+ 		console.log("Right shift: ", 5 >> 1); //5=>0000 0101 //right shift by 1 position=>0000 0010(2)
+ 		console.log("Left shift: ", 8 << 3);  //8=>0000 1000 , //left shift by 3 position=> 0100 0000(64)
+ 		console.log("Right shift: ", 8 >> 3); //8=>0000 1000 , // right shift by 3 position=>0000 0001(1)
+ 		console.log("unsigned right shift : ", 8 >>> 3);
+
+		 
+
+		</script>
+	</body>
+</html>

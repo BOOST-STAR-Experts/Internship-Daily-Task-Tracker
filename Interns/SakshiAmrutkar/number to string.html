@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Convert Number/other data-type to string </title>
+	</head>
+
+	<body>
+		<script>
+			//Convert Number to String
+			 // 1)Method "String" is used
+				var a =10;
+				var b =String(a);
+				console.log(typeof(a));
+				console.log(typeof(b));
+
+			  // 2)Method "toString" is used
+				var c = toString(a);
+				console.log(typeof(c));
+
+			  //3) (number + " ") is used
+				console.log(typeof(a + " "));
+				
+			//Convert Boolean to String
+			  	var T = true;
+			  	var F = false;
+
+			  	console.log(typeof(T));
+			  	console.log(typeof(F));
+
+			  	var t = String(T);
+			  	var f = String(F);
+
+			  	console.log(typeof(t));
+			  	console.log(typeof(f));
+		</script>
+	</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Calculator</title>
+	</head>
+	<body>
+		<script>
+			var operator = prompt("Enter operator: ");
+			var num1 = Number(prompt("Enter number 1 : "));
+			var num2 = Number(prompt("Enter number 2 : "));
+			var result;
+
+			switch(operator)
+			{
+				case '+':
+				result = num1 + num2 ;
+				console.log("result : ", result);
+				break;
+
+				case '-':
+				result = num1 - num2 ;
+				console.log("result : ", result);
+				break;
+
+				case '*':
+				result = num1 * num2 ;
+				console.log("result : ", result);
+				break;
+
+				case '/':
+				result = num1 / num2 ;
+				console.log("result : ", result);
+				break;
+
+				default:
+				console.log("Invalid operator");
+				break;
+			}
+		</script>
+	</body>
+</html>

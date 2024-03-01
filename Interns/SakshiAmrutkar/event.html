@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Event</title>
+	</head>
+
+	<body>
+		<!-- Create a button -->
+		<div>
+			<button> Click me </button>
+		</div>
+	</body>
+
+	<script>
+		//Bubbling
+	 	var div = document.querySelector("div");
+	 	var button = document.querySelector("button");
+	 	div.addEventListener("click" , ()=>{console.log("Hello")} );
+
+	 	button.addEventListener("click" , ()=>{console.log("Hello Hello")},);
+
+
+	 	/*
+	 	Capturing
+	 	var div = document.querySelector("div");
+	 	var button = document.querySelector("button");
+	 	div.addEventListener("click" , ()=>{console.log("Hello")} ,true);
+
+	 	button.addEventListener("click" , ()=>{console.log("Hello Hello")},true);
+	 	*/
+
+	</script>
+</html>
