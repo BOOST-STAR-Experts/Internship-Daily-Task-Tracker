@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1. converting string to Number
+        var str = "abcd";
+        console.log(typeof(+str));
+        
+        // 2. converting Number to string 
+        var num = 10;
+        console.log(typeof(num+""));
+
+        // 3. Converting Booleans to Numbers
+        var bool = true;
+        console.log(typeof(+bool));
+        console.log(typeof(Number(bool)));
+
+        // 4. Converting Booleans to Strings
+        var bool = false;
+        console.log(typeof(bool+""));
+        console.log(typeof(String(bool)))
+        console.log(typeof(bool.toString()));
+
+        // 5. Converting Date to Number 
+        console.log(typeof(Number(Date())));
+
+        // 6. Converting Date to String 
+        console.log(typeof(String(Date())));
+        // console.log(Date());
+
+        // undefined
+        let a;
+        console.log(typeof(a));
+
+        // null
+        let b = "";
+        console.log(typeof(b));
+        
+    </script>
+</body>
+</html>

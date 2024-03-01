@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#loading{
+    width: 100%;
+    height: 100vh;
+    background: #fff url('/Practice/loader_task6/1496.gif') no-repeat center;
+}
+
+body{
+    /* line-height: 1.4; */
+}
+
+nav{
+    box-shadow: 5px 5px 5px rgb(199, 197, 197);
+    position: sticky;
+    top: 0;
+    margin-bottom: 32px;
+    padding: 10px;
+    background-color: white;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navigation .navbar{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    gap: 50px;
+}
+.navigation .navbar li{
+    list-style: none;
+    
+}
+.navigation .navbar li a{
+    display: block;
+    text-transform: uppercase;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    padding: 14px 16px;
+    background-color: rgb(240, 234, 174);
+    box-shadow: 5px 5px 5px rgb(199, 197, 197);
+    border-radius: 5px;
+}
+.navigation .navbar li a:hover{
+    background-color: rgb(221, 221, 240);
+    border-radius: 15px;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    /* background-color: aqua; */
+    /* height: 1500px; */
+}
+.icon{
+    /* font-size: 32px; */
+    display: none;
+}
+.logo img{
+    height: 100px;
+    width: 150px;
+}
+
+/* hero */
+.main{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.main_content h4{
+    align-self: flex-start;
+    background-color: green;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+}
+
+.main_content h1{
+    font-size: 60px;
+    line-height: 1.2;
+}
+
+.main_img img{
+    width: 380px;
+    height: 380px;
+}
+
+button{
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+}
+button:hover{
+    background-color: rgb(176, 212, 229);
+}
+.main_btn{
+    background-color:rgb(231, 181, 88);
+    align-self: flex-start;
+}
+
+.features{
+    margin-top: 50px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.feature{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.feature:hover{
+    box-shadow:  7px 7px 6px #aebfd6,
+     -7px -7px 6px #ffffff;
+}
+
+.divider{
+    border: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+/* mid part- menu */
+.menu{
+    display: flex;
+    flex-direction: column;
+    gap: 25px 0;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.menu h3{
+    align-self: center;
+    background-color: green;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+}
+
+.items{
+    margin-bottom: 30px; 
+}
+
+.image-gallery {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  
+  .image-gallery .column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .image-item img {
+    width: 100%;
+    border-radius: 5px;
+    height: 100%;
+    object-fit: cover;
+  }
+
+/* footer */
+
+footer{
+    /* background-color: rgb(194, 210, 225); */
+}
+.footer{
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer img{
+    height: 100px;
+    width: 150px;
+}
+
+.links h3{
+    margin-bottom: 10px;  
+}
+.links ul{
+    list-style: none;
+}
+.links ul li{
+    margin-bottom: 3px;
+}
+.newsletter h3{
+    margin-bottom: 10px;
+}
+.newsletter input{
+    padding: 5px 15px;
+    margin-bottom: 10px;
+}
+
+/* responsive */
+
+@media (max-width:768px){
+
+    .navigation .icon{
+        display: inline;
+        font-size: 32px;
+    }
+
+    .navigation .navbar{
+        display: none;
+    }
+    .main{
+        flex-direction: column;
+    }
+
+    .main_img{
+        display: flex;
+        justify-content: center;
+    }
+
+    .main_img img{
+        width: 90%;
+    }
+
+    .main_content{
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .main_content h1{
+        font-size: 32px;
+    }
+    .features{
+        margin-top: 20px;
+        flex-direction: column;
+        gap: 5px;
+        padding: 10px;
+    }
+    .image-gallery {
+        flex-direction: column;
+      }
+
+    .footer{
+        flex-direction: column;
+        
+    }
+    .links{
+        margin-bottom: 10px;
+    }
+}
+
