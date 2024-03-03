@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to left top, rgb(62, 62, 230), purple);
+  padding: 0 35px;
+}
+.wrapper {
+  max-width: 1100px;
+  width: 100%;
+  position: relative;
+}
+
+button {
+  border: none;
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  font-size: 1.25rem;
+  transform: translateY(-50%);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+#backbtn {
+  left: 10px;
+}
+#nextbtn{
+  right: 10px;
+}
+.carousel {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 3) - 12px);
+  gap: 16px;
+  overflow: hidden;
+}
+.card {
+  list-style: none;
+  height: 342px;
+  background-color: white;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  gap: 10px;
+}
+
+.card .profile i {
+  padding: 10px;
+  font-size: 50px;
+  border: 5px solid purple;
+  border-radius: 50%;
+}
+.name {
+  text-align: center;
+  font-size: 1.3rem;
+}
+.des {
+  font-size: 1rem;
+  color: rgb(119, 14, 14);
+}
+.review {
+  text-align: center;
+  font-size: 1rem;
+}
+
+.star{
+  color: gold;
+}
+
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #ddd;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: #555;
+}
+
+
+@media screen and (max-width: 900px) {
+  .carousel {
+    grid-auto-columns: calc((100% / 2) - 9px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card-wrapper {
+    width: 90%;
+  }
+  .carousel {
+    grid-auto-columns: 100%;
+  }
+
+  button:first-child {
+    left: 20px;
+  }
+  button:last-child {
+    right: 20px;
+  }
+}
