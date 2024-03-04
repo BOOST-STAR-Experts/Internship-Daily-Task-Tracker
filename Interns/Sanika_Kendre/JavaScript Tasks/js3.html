@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Operators</title>
+</head>
+<body>
+    <script>
+        //Arithmetic Operators
+        let a =100;
+        let b=75; 
+        let c=4;
+        let d=9;
+        console.log("Arithmatic Operators:")
+        //Addition
+        console.log("Addition: "+ (a+b));
+        //Subtraction
+        console.log("Subtraction:"+(a-b));
+        //Division
+        console.log("Division:"+(a/b));
+        //Multiplication
+        console.log("Multiplication:"+(a*b));
+        //Expotential
+        console.log("Expotential:"+(c**d));
+        //Modulus
+        console.log("Modulus:"+(c%d));
+        //Increment
+        console.log("Post Increment:"+(c++));
+        ++d;
+        console.log("Pre Increment:"+(d));
+        //Decrement
+        console.log("Post Decrement:"+(b--));
+        --a; 
+        console.log("Pre Decrement:"+(a));
+
+        //Assignment Operators
+        console.log("Assignment Operators:")
+        console.log("a+=9: "+(a+=9));
+        console.log("b-=10: "+(b-=10));
+        console.log("c*=30: "+(c*=30));
+        console.log("d/=10: "+(d/=10));
+        console.log("a%=25: "+(a%=25));
+        console.log("b**=2: "+(b**=2));
+
+        //Comparison Operators
+        console.log("Comparison Operators:")
+        let s=78;
+        let r=90;
+        console.log("s==r: "+(s==r));
+        console.log("s===r: "+(s===r));
+        console.log("s!=r: "+(s!=r));
+        console.log("s!==r: "+(s!==r));
+        console.log("s>=r: "+(s>=r));
+        console.log("s>r: "+(s>r));
+        console.log("s<=r: "+(s<=r));
+        console.log("s<r: "+(s<r));
+        console.log("s==r: "+(s==r));
+
+        //Ternary Operators
+        let age=20;
+        console.log("Ternary Operation");
+        console.log(age>=18?"Eligible To Vote":"Not Eligible to Vote");
+        
+        //String Comparison
+        let str="Hello";
+        let str1="Helllo";
+        let str2="Everyone";
+        console.log(str<str1);
+        console.log(str>str1);
+        console.log(str+" "+str2);
+
+        //Addition Of Strings
+        /*If there is a string at the end or 
+        in between the expression,it considers all the further
+        numbers as strings and the prior ones are considered numbers.*/
+        a=10;
+        b=20;
+        c=100;
+        d="40";
+        console.log(a+b+c+d);
+
+        a=10;
+        b="20";
+        c=100;
+        d="40";
+        console.log(a+b+c+d);
+
+        a="10";
+        b=20;
+        c=100;
+        d=40;
+        console.log(a+b+c+d);
+
+        a=10;
+        b=20;
+        c=100;
+        d=40;
+        console.log(a+b+c+d);
+
+        //Logical Operators
+        console.log("Logical Operators");
+        c=12;
+        d=15;
+        console.log("Logical Add:"+(c&&d));
+        console.log("Logical Or:"+(c||d));
+        console.log("Logical Not:"+(!c));
+
+        //Bitwise Operators
+        console.log("Bitwise Operators");
+        console.log("Bitwise Add: "+(c&d));
+        console.log("Bitwise Or: "+(c|d));
+        console.log("Bitwise Not: "+(~c));
+        console.log("Bitwise XOR: "+(c^d));
+        console.log("Bitwise Left Shift: "+(c<<1));
+        console.log("Bitwise Right Shift: "+(c>>1));
+        console.log("Bitwise Unsigned Right Shift: "+(c>>>2));
+        
+   </script>
+</body>
+</html>

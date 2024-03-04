@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> functions in js</title>
+    <script>
+
+    // ******************* normal function **********************************************
+    // ELIGIBLE TO VOTE
+    let age= prompt("enter your age :");
+    age=Number(age);
+    function ageCheck(age){
+        console.log("age is ",age);
+        (age>= 18 && age<=100 )? console.log("YOU ARE ELIGIBLE TO VOTE"): console.log("YOU ARE NOT ELIGIBLE TO VOTE");
+    }
+    ageCheck(age);
+
+    // NUMBERS OF VOWELS IN WORD
+    function countVowels(str){
+        let cnt=0;
+        for(let i of str){
+            if((i=="a")||(i=="e")||(i=="i")||(i=="o")||(i=="u")){ // ckeck vowels in word 
+                cnt++; //incrementing conunt of vowels
+            }
+        }
+        console.log(`number of vowels in ${str} is : ${cnt}`);
+    }
+    countVowels("coffee");
+
+    // USERNAME GENERATOR 
+    function userName(name){
+        let uName = name+"@"+name.length;
+        console.log(`GENERATORED USERNAME FOR U IS :${uName}`);
+    }
+    userName("booststar");
+
+    //factorial of no
+    function factorial(n) {
+    if (n === 0 || n === 1) {
+        return 1;
+    } else {
+        return n * factorial(n - 1);   //5**4*3*2*1
+        }
+    }
+    console.log(` factorial is : ${factorial(5)} `);    // Output: 120
+    console.log("factorail of 1 is :",factorial(1));      // Output: 1
+
+    // sum of array
+    function sumArray(arr) {
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i];
+        }
+        return sum;
+    }
+    console.log("sum of array is : "+ sumArray([1, 2, 3, 4, 5])); // Output: 15
+
+//____________________________________________________________________________________________________________
+    //                                        Anonymous functions 
+    
+//    ; let greet = function(name){
+//         console.log(`hello ${name}`);
+//     }
+//     greet("akshada kakade!!");
+
+//     //ex-01
+// let ageCheck = function (age){
+//         console.log(`your  age is : ${age}`);
+//         (age>= 18 && age<=100 )? console.log("YOU ARE ELIGIBLE TO VOTE"): console.log("YOU ARE NOT ELIGIBLE TO VOTE");
+//     }
+//     ageCheck(45);
+//     ageCheck(10);
+
+// // ex-02
+//    let countVowels = function (str){
+//             let cnt=0;
+//             for(let i of str){
+//                 if((i=="a")||(i=="e")||(i=="i")||(i=="o")||(i=="u")){ // ckeck vowels in word 
+//                     cnt++; //incrementing conunt of vowels
+//                 }
+//             }
+//             console.log(`number of vowels in ${str} is : ${cnt}`);
+//         }
+//         countVowels("coffee");
+
+// //ex-03
+//     let userName= function(name){
+//         let uName = name+"@"+name.length;
+//         console.log(`GENERATORED USERNAME FOR U IS :${uName}`);
+//     }
+//     userName("booststar");
+
+// //factorial of no
+//     let factorial = function (n) {
+//     if (n === 0 || n === 1) {
+//         return 1;
+//     } else {
+//         return n * factorial(n - 1);   //5*4*3*2*1
+//         }
+//     }
+//     console.log(` factorial is : ${factorial(5)} `);    // Output: 120
+
+// //sum of array
+//      let sumArray = function (arr) {
+//     let sum = 0;
+//     for (let i = 0; i < arr.length; i++) {
+//         sum += arr[i];
+//         }
+//         return sum;
+//     }
+//     console.log("sum of array is : "+ sumArray([1, 2, 3, 4, 5])); // Output: 15
+
+
+//_______________________________________________________________________________________________________
+//----------- Arrow Function --------------------
+//     const sum =(p1,p2)=>{
+//         console.log(` sum is :${p1+p2}`);
+//     }
+//     sum(100,20);
+
+// //ex- age  ckeck
+//     let ageCheck = (age)=>{
+//         console.log(`your  age is : ${age}`);
+//         (age>= 18 && age<=100 )? console.log("YOU ARE ELIGIBLE TO VOTE"): console.log("YOU ARE NOT ELIGIBLE TO VOTE");
+//     }
+//     ageCheck(65);
+//     ageCheck(16);
+
+// // eg : number of vowels in word 
+//     let cnt=0;
+//     let countVowels=(str)=>{
+//         str=str.toLowerCase();
+//         for(let i of str){
+//             if((i=="a")||(i=="e")||(i=="i")||(i=="o")||(i=="u")){ // ckeck vowels in word 
+//                 cnt++; //incrementing conunt of vowels
+//             }
+//         }
+//         console.log(`number of vowels in ${str} is : ${cnt}`);        
+//     }
+//     countVowels("webDevelOper");
+
+// //ex- username generator
+// let userName=(name)=>{
+//         let uName = name+"@"+name.length;
+//         console.log(`GENERATORED USERNAME FOR U IS :${uName}`);
+//     }
+//     userName("Engineering");
+
+
+// //factorial of no
+// let factorial = (n)=> {
+//     if (n === 0 || n === 1) {
+//         return 1;
+//     } else {
+//         return n * factorial(n - 1);   //4*3*2*1
+//         }
+//     }
+//     console.log(` factorial is : ${factorial(4)} `);    // Output: 24
+
+
+// //sum of array
+// let sumArray = (arr) =>{
+//     let sum = 0;
+//     for (let i = 0; i < arr.length; i++) {
+//         sum += arr[i];           //11+12+13+14+5
+//         }
+//         return sum;
+//     }
+//     console.log("sum of array is : "+ sumArray([11, 12, 13, 14, 5])); // Output: 164
+
+//_______________________________________________________________________________________________________
+//                                     IIFE Function 
+
+//ex- age  ckeck
+//     (function (age){
+//         console.log(`your  age is : ${age}`);
+//         (age>= 18 && age<=100 )? console.log("YOU ARE ELIGIBLE TO VOTE"): console.log("YOU ARE NOT ELIGIBLE TO VOTE");
+//     })(44);
+
+// // eg : number of vowels in word 
+//     let cnt=0;
+//     (function(str){
+//         str=str.toLowerCase();
+//         for(let i of str){
+//             if((i=="a")||(i=="e")||(i=="i")||(i=="o")||(i=="u")){ // ckeck vowels in word 
+//                 cnt++; //incrementing conunt of vowels
+//             }
+//         }
+//         console.log(`number of vowels in ${str} is : ${cnt}`);        
+//     })("INTERNSHIP");
+
+// //ex- username generator
+//     (function(name){
+//         let uName = name+"@"+name.length;
+//         console.log(`GENERATORED USERNAME FOR U IS :${uName}`);
+//     })("BoostStarExperts");
+
+
+// //factorial of no 
+//     const factorial = (function() {
+//     return function(n) {
+//         if (n === 0 || n === 1) {
+//             return 1;
+//         } else {
+//             return n * factorial(n - 1);
+//         }
+//     };
+// })();
+// console.log(` factorial is : ${factorial(0)}`); // Output: 1
+
+// //sum of array
+// let sumArray = (arr) =>{
+//     let sum = 0;
+//     for (let i = 0; i < arr.length; i++) {
+//         sum += arr[i];           //11+12+13+14+5
+//         }
+//         return sum;
+//     }
+    // console.log("sum of array is : "+ sumArray([10, 20, 30, 40, 50])); // Output: 150
+
+
+
+
+
+// //higher order function 
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

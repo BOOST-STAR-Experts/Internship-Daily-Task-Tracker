@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects in JS</title>
+</head>
+<body>
+    <script>
+        //Example 1
+        console.log("****************Example 1****************");
+
+        const person = { 
+            firstName: "John",
+            lastName: "Doe",
+            age: 32,
+            gender: "Male",
+            phoneNo:987654123
+         };
+        console.log(person);
+        console.log("Accessing the Last Name of Person: "+person.lastName);
+
+
+        //Adding new property to an object
+        person.email ="john.doe@example.com";
+        console.log(`${person.firstName} now has email as ${person.email}`);
+        console.log("*********************************");
+
+        // Example 2
+        console.log("**************Example 2****************");
+
+        const family = [
+            {  
+                firstName: "John",
+                relation: "Father"
+            },
+            {  
+                firstName:"Emma",
+                relation: "Mother"
+            },
+            {    
+                firstName: "William",
+                relation: "Brother"
+            }
+        ];
+        console.log("\nFamily Members are : \n");
+        for (const member of family){
+            console.log(`${member.firstName} - ${member.relation}`);
+        }
+        console.log("*******************************");
+
+        //Example 3
+        console.log("**********Example 3****************");
+        const cafe={
+            name: 'Tiffins',
+            menu:['Coffee', 'Tea','Milkshakes'],
+            openingHours: '9am - 5pm',
+            displayInfo() {
+                console.log(`Welcome to ${cafe.name}.`);
+                for(const  item of cafe.menu) {
+                    console.log(`We serve ${item}.`);
+                }
+                
+                console.log(`We are open from ${cafe.openingHours}`);
+            }
+        };
+        cafe.displayInfo();
+        console.log("***********************************");
+
+        //Example 4
+        console.log("**********Example 4****************");
+        const student={
+            name: 'Ajay Mehra',
+            class:'TE',
+            percent:84,
+            result() {
+                console.log(`${this.name}`);
+                if(student.percent>=40){
+                    console.log(`Passed with ${student.percent}%`);
+                }
+                else{
+                    console.log(`Failed`);
+                }
+            }
+        };
+        student.result();
+        console.log("***********************************");
+        
+        //Example 5
+        console.log("**********Example 5****************");
+        const book={
+            name: 'Secret',
+            author:'Rhonda Byrne',
+            publish_date:2006,
+            };
+        console.log(`The ${book.name} written by ${book.author} was published on ${book.publish_date}.`);
+        console.log("***********************************");
+    </script>
+    </script>
+</body>
+</html>
