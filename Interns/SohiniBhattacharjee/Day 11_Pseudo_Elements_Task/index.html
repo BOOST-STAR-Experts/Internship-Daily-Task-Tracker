@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Psedu-Elements</title>
+    <style>
+      li {
+        list-style-type: square;
+      }
+
+      li::marker {
+        color: red;
+      }
+
+      .circle > li{
+        list-style-type: circle; 
+      }
+
+      .circle > li::marker{
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Square marker in the list</h2>
+      <ul class="square">
+        <li>List Elements</li>
+        <li>List Elements</li>
+        <li>List Elements</li>
+        <li>List Elements</li>
+        <li>List Elements</li>
+      </ul>
+
+      <h2>Circle marker in the list</h2>
+      <ul class="circle">
+        <li>List Elements</li>
+        <li>List Elements</li>
+        <li>List Elements</li>
+        <li>List Elements</li>
+        <li>List Elements</li>
+      </ul>
+    </div>
+  </body>
+</html>
