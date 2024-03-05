@@ -2,12 +2,6 @@
 
 Welcome to the Internship-Daily-Task-Tracker Repository! 🚀
 
-## Our Awesone Contributors:
-
-<a href = "https://github.com/BOOST-STAR-Experts/Internship-Daily-Task-Tracker/graphs/contributors">
-  <img src = "https://contrib.rocks/image?repo=BOOST-STAR-Experts/Internship-Daily-Task-Tracker"/>
-</a>
-
 ## Note:
 You have collaborator access, so no need to create a pull request. Directly push your changes to the main branch. Happy coding! 🚀
 
@@ -54,5 +48,11 @@ You have collaborator access, so no need to create a pull request. Directly push
      ```
 
 Now you've successfully updated your daily tasks! Repeat these steps for each day.
+
+## Our Awesone Contributors:
+
+<a href = "https://github.com/BOOST-STAR-Experts/Internship-Daily-Task-Tracker/graphs/contributors">
+  <img src = "https://contrib.rocks/image?repo=BOOST-STAR-Experts/Internship-Daily-Task-Tracker"/>
+</a>
 
 
