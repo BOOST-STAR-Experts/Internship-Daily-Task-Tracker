@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Psedu-Elements</title>
+    <title>Pseudo-Elements</title>
     <style>
       li {
         list-style-type: square;
@@ -20,10 +20,19 @@
       .circle > li::marker{
         color: blue;
       }
+      
+      .disc > li{
+        list-style-type: disc; 
+      }
+      
+      .disc > li::marker{
+        color: green;
+      }
     </style>
   </head>
   <body>
     <div class="container">
+      <h1>Pseudo-Elements and Combinators</h1>
       <h2>Square marker in the list</h2>
       <ul class="square">
         <li>List Elements</li>
@@ -35,6 +44,15 @@
 
       <h2>Circle marker in the list</h2>
       <ul class="circle">
+        <li>List Elements</li>
+        <li>List Elements</li>
+        <li>List Elements</li>
+        <li>List Elements</li>
+        <li>List Elements</li>
+      </ul>
+      
+      <h2>Disc marker in the list</h2>
+      <ul class="disc">
         <li>List Elements</li>
         <li>List Elements</li>
         <li>List Elements</li>
