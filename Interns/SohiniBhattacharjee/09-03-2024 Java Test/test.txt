@@ -1,0 +1,267 @@
+// 1.
+
+import java.util.*;
+class HelloWorld {
+    public static void main(String[] args) {
+       Scanner sc = new Scanner(System.in);  
+       System.out.println("Enter value of x: ");  
+       int x = sc.nextInt();
+       System.out.println("Enter value of y: ");
+       int y = sc.nextInt();  
+       
+       int temp = x;  
+       x = y; 
+       y = temp;
+       
+       System.out.println("After swapping:");  
+       System.out.println("x = "+ x);
+       System.out.println("y = "+ y);
+    }
+}
+
+// 2.
+
+
+import java.util.*;
+
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter value of x: ");
+        int x = sc.nextInt();
+        System.out.println("Enter value of y: ");
+        int y = sc.nextInt();
+
+        x = x + y;
+        y = x - y;
+        x = x - y;
+
+        System.out.println("After swapping:");
+        System.out.println("x = " + x);
+        System.out.println("y = " + y);
+    }
+}
+
+
+// 3
+
+import java.util.Scanner;
+
+class FactorialExample {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a number: ");
+        int number = sc.nextInt();
+
+        int res = 1;
+
+        for (int i = 1; i <= number; i++) {
+            res = res * i;
+        }
+
+        System.out.println("Factorial = " + res);
+    }
+}
+
+// 4
+
+import java.util.Scanner;
+
+class FactorialExample {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a number: ");
+        int number = sc.nextInt();
+
+        int res = findFactorial(number);
+
+        System.out.println("Factorial = " + res);
+    }
+
+    public static int findFactorial(int n) {
+        if (n == 0 || n == 1) {
+            return 1;
+        } else {
+            return n * findFactorial(n - 1);
+        }
+    }
+}
+
+
+// 5
+
+import java.util.Scanner;
+
+public class PrimeNumberChecker {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a number: ");
+        int number = sc.nextInt();
+
+        if (number < 2) {
+            System.out.println("Not Prime");
+        } else {
+            boolean isPrime = true;
+
+            for (int i = 2; i <= Math.sqrt(number); i++) {
+                if (number % i == 0) {
+                    isPrime = false;
+                    break;
+                }
+            }
+
+            if (isPrime) {
+                System.out.println("The number " + number + " is prime.");
+            } else {
+                System.out.println("The number " + number + " is not prime.");
+            }
+        }
+    }
+}
+
+
+
+// 6
+
+import java.util.Scanner;
+
+public class IntegerLengthExample {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter a number: ");
+        int n = scanner.nextInt();
+
+        int count = 0;
+        while (n != 0) {
+            n = n / 10;
+            count = count + 1;
+        }
+
+        System.out.println("The length of the number: " + count);
+    }
+}
+
+
+// 7
+
+import java.util.Scanner;
+public class FibonacciSeriesGenerator {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("Fibonacci series limit:");
+        int n = sc.nextInt();
+        
+        int first = 0, second = 1;
+
+        for (int i = 1; i <= n; i++) {
+            System.out.print(first + " ");
+
+            int next = first + second;
+            first = second;
+            second = next;
+        }
+    }
+}
+
+// 8
+
+import java.util.Scanner;
+
+public class PalindromeChecker {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a number: ");
+        int num = sc.nextInt();
+        
+        int original = num;
+        int reversed = 0;
+
+        while (num != 0) {
+            int digit = num % 10;
+            reversed = reversed * 10 + digit;
+            num = num / 10;
+        }
+
+        if(original == reversed){
+            System.out.println("Palindrome");
+        }else{
+            System.out.println("Not Palindrome");
+        }
+        
+    }
+}
+
+
+// 9
+
+import java.util.Scanner;
+import java.lang.Math;
+
+public class ArmstrongNumberExample {
+    
+    static boolean isArmstrong(int n) {
+        int temp = n;
+        int digits = 0, last = 0, sum = 0;
+
+        
+        while (temp > 0) {
+            temp = temp / 10;
+            digits++;
+        }
+
+        temp = n;
+        
+        while (temp > 0) {
+            last = temp % 10;
+            sum += Math.pow(last, digits);
+            temp = temp / 10;
+        }
+
+        return n == sum;
+    }
+
+    
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+
+        int num = sc.nextInt();
+
+        if (isArmstrong(num)) {
+            System.out.println(num + " is an Armstrong number.");
+        } else {
+            System.out.println(num + " is not an Armstrong number.");
+        }
+    }
+}
+
+
+
+// 10
+
+import java.util.Scanner;
+
+public class SumOfDigits {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter a number: ");
+        int n = sc.nextInt();
+
+        int res = 0;
+        while (n > 0) {
+            int digit = n % 10;
+            res += digit;
+            n = n / 10;
+        }
+
+        System.out.println("The sum of digits in " + res);
+    }
+}
+
+
+
+
+
