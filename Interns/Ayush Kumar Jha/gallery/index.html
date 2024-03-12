@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      body {
+        margin: 10px;
+      }
+
+      h1 {
+        text-align: center;
+        color: rgb(73, 165, 42);
+      }
+
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 10px;
+        padding: 50px;
+      }
+
+      .column {
+        display: grid;
+        gap: 20px;
+      }
+
+      .first-column,
+      .sec-column,
+      .third-column {
+        height: 100%;
+      }
+
+      .first-column {
+        grid-template-rows: 1fr 2fr;
+      }
+
+      .sec-column {
+        grid-template-rows: 1fr;
+      }
+
+      .third-column {
+        grid-template-rows: repeat(3, 1fr);
+      }
+
+      .image {
+        width: 100%;
+        height: 100%;
+        border-radius: 30px;
+        object-fit: cover;
+        transition: transform 0.1s;
+      }
+
+      .image:hover {
+        transform: scale(1.03);
+      }
+
+      @media screen and (max-width: 1024px) {
+        .img-gallery {
+          grid-template-columns: 1fr;
+        }
+        .first-column,
+        .sec-column,
+        .third-column {
+          grid-template-rows: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+    <h1>Image Gallery</h1>
+    <div class="gallery">
+      <div class="column first-column">
+        <img class="image" src="images/a.jpg" />
+        <img class="image" src="images/b.jpg" />
+      </div>
+      <div class="column sec-column">
+
+        <img class="image" src="images/c.jpg" />
+      </div>
+      <div class="column third-column">
+        <img class="image" src="images/d.jpg" />
+        <img class="image" src="images/f.jpg" />
+        <img class="image" src="images/g.jpg" />
+      </div>
+    </div>
+  </div>
+  </body>
+</html>
