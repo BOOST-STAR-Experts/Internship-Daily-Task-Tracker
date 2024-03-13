@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo-Elements</title>
+    <style>
+      li {
+        list-style-type: square;
+      }
+
+      li::marker {
+        color: red;
+      }
+
+      .circle > li{
+        list-style-type: circle; 
+      }
+
+      .circle > li::marker{
+        color: blue;
+      }
+         h2{
+                 color:Blue;
+                text-decoration:underline;
+          }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1><i>Pseudo-Elements and Combinators</i></h1>
+      <h2>PG Courses</h2>
+      <ul class="square">
+        <li>MCA</li>
+        <li>MBA</li>
+        <li>MCom</li>
+        <li>MTech</li>
+        <li>MSc</li>
+      </ul>
+
+      <h2>UG Courses</h2>
+      <ul class="circle">
+        <li>BCA</li>
+        <li>BBA</li>
+        <li>BCom</li>
+        <li>BE</li>
+        <li>BSc</li>
+      </ul>
+      
+    </div>
+  </body>
+</html>

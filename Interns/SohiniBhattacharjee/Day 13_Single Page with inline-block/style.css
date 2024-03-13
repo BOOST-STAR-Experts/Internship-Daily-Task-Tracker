@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --text-dark: #36454f;
+  --white: #ffffff;
+  --max-width: 1200px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(249, 249, 244);
+}
+
+.section__container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 5rem 1rem;
+}
+
+/* Navbar */
+.navigation {
+  background-color: #3468c0;
+}
+nav {
+  min-height: 60px;
+  max-width: var(--max-width);
+  margin-inline: auto;
+  width: 100%;
+}
+
+.social-accounts,
+.nav-links {
+  display: inline-block;
+}
+
+.social-accounts {
+  width: 300px;
+}
+
+.nav-links {
+  width: calc(100% - 330px);
+  text-align: end;
+}
+
+.nav-links ul,
+.social-accounts ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li,
+.social-accounts li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.nav-links a,
+.social-accounts a {
+  color: var(--white);
+  text-decoration: none;
+  padding: 20px 15px 20px 15px;
+  display: block;
+}
+
+.nav-links a:hover {
+  background-color: #0d3cb4;
+}
+
+.burger-icon {
+  display: none;
+}
+
+.burger-icon button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: var(--white);
+  padding: 10px;
+}
+
+/* Picture Section */
+.hero__section {
+  background-color: #86a7fc;
+}
+.profile-desc-container {
+  text-align: center;
+}
+
+.image-section img {
+  max-height: 300px;
+  border-radius: 50%;
+  width: 100%;
+}
+.image-section {
+  display: inline-block;
+}
+
+.about-section {
+  width: 70%;
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  color: var(--white);
+  font-size: 1.2rem;
+  padding: 0px 40px;
+}
+
+.name-section {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.desc-section {
+  margin-top: 10px;
+}
+
+.about-section button {
+  border: none;
+  background-color: #3468c0;
+  padding: 15px;
+  border-radius: 8px;
+  font-weight: 700;
+  color: var(--white);
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.about-section button:hover {
+  background-color: #05216a;
+}
+
+/* Skill section */
+
+.skill-section {
+  font-size: 1.2rem;
+  text-align: center;
+  color: var(--text-dark);
+}
+
+.skill-heading {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.skill-desc {
+  margin-bottom: 10px;
+}
+.skill-link a {
+  text-decoration: none;
+  color: #0d3cb4;
+  font-weight: 500;
+}
+
+/* Skill Card Section */
+.skill-card-section {
+  text-align: center;
+}
+
+.skill-card {
+  display: inline-block;
+  width: 300px;
+  background-color: #fff;
+  text-align: center;
+  margin: 0px 15px 50px 15px;
+}
+
+.skill-image {
+  position: relative;
+  font-size: 50px;
+  background-color: #3468c0;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  top: -35px;
+  left: calc(50% - 40px);
+  margin-bottom: -20px;
+}
+
+.skill-card-heading {
+  font-weight: 600;
+}
+.skill-card ul {
+  text-align: left;
+  list-style: none;
+  margin: 10px 0px 30px 40px;
+}
+
+.skill-card ul li {
+  margin-bottom: 10px;
+}
+
+.skill-card ul li i {
+  font-size: 20px;
+  margin-right: 5px;
+  font-weight: 800;
+  color: #0d3cb4;
+}
+
+/* Contact Section */
+.contact__container {
+  background-color: #86a7fc;
+  /* position: fixed;
+  width: 100%;
+  bottom: 0; */
+}
+.contact-section {
+  text-align: center;
+}
+
+.contact-heading {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.contact-form div {
+  display: inline-block;
+}
+
+label,
+input,
+textarea {
+  display: block;
+  margin-bottom: 10px;
+  padding: 10px 50px 10px 50px;
+  border-radius: 8px;
+  border: none;
+}
+
+.contact-section button {
+  border: none;
+  background-color: #3468c0;
+  padding: 15px;
+  border-radius: 8px;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+}
+
+.contact-section button:hover {
+  background-color: #05216a;
+}
+
+@media screen and (max-width: 1200px) {
+  .nav-links {
+    display: none;
+  }
+
+  .burger-icon {
+    position: absolute;
+    display: inline-block;
+    right: 25px;
+  }
+  .burger-icon button {
+    border: none;
+    background: none;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+  }
+  .name-section p {
+    font-size: 1.2rem;
+  }
+  .about-section,
+  .skill-section {
+    font-size: 1rem;
+    width: 100%;
+    margin: 0;
+  }
+  .skill-desc {
+    padding: 0px 30px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .social-accounts {
+    display: none;
+  }
+  .skill-card {
+    width: 200px;
+  }
+
+  label,
+  input,
+  textarea {
+    padding: 10px 30px 10px 30px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .about-section {
+    margin-top: 10px;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+  }
+}

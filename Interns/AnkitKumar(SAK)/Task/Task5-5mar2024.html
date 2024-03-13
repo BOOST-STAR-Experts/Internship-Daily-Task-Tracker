@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo-Elements</title>
+    <style>
+      li {
+        list-style-type:lower-greek;
+      }
+
+      li::marker {
+        color: rgb(0, 255, 8);
+      }
+
+      .square > li{
+        list-style-type: square; 
+      }
+
+      .square> li::marker{
+        color: rgb(255, 54, 54);
+      }
+      .sr, .lg{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .container{
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+      }
+      #watermark{
+        position: absolute;
+        top:20%;
+        left:30%;
+        overflow: hidden;
+        transform: translate(-20,-20);
+        transform: rotate(-30deg);
+        color: rgba(214, 212, 212, 0.391);
+        font-size: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <span id="watermark">SAK</span>
+    <h1>Pseudo Selector & Combinators</h1>
+    
+    <div class="container">
+      <div class="lg">
+        <h2>Lower-Greek in the list</h2>
+        <ul class="lower-greek">
+          <li>Day 1</li>
+          <li>Day 2</li>
+          <li>Day 3</li>
+          <li>Day 4</li>
+          <li>Day 5</li>
+        </ul>
+      </div>
+      <div class="sr">
+        <h2>Square marker in the list</h2>
+        <ul class="square">
+          <li>Day 1</li>
+          <li>Day 2</li>
+          <li>Day 3</li>
+          <li>Day 4</li>
+          <li>Day 5</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

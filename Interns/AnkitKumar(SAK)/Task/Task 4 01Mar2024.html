@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonial</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            /* color:white; */
+            padding: 0;
+        }
+
+        body {
+            background-color: black;
+
+        }
+
+        .flexRow {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .flexCol {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 2px;
+
+        }
+
+        .tcard {
+            position: relative;
+            justify-content: flex-start;
+            width: 400px;
+            height: 400px;
+            padding: 1rem;
+            margin: 1rem;
+            /* border: 1px solid white; */
+            transition: all 200ms ease-in;
+        }
+
+        .tcard:hover {
+            transform: scale(1.03);
+            
+        }
+
+        .tBody {
+            position: absolute;
+            top: 15%;
+            height: 300px;
+            color: black;
+            padding: 2rem;
+            background-color: white;
+            border-radius: 12px;
+        }
+
+        .logo {
+            z-index: 10;
+        }
+
+        .img {
+            color: rgb(0, 13, 255);
+            background-color: rgb(225, 219, 219);
+            border-radius: 50%;
+            box-shadow: 0px 0px 8px black;
+            font-size: 80px;
+        }
+
+        .header {
+            gap: 0;
+        }
+
+        .rating {
+            color: gold;
+        }
+
+        .name {
+            font-size: 20px;
+        }
+
+        .info {
+            color: rgb(176, 173, 173);
+            font-size: 18px;
+            padding: .5em;
+        }
+
+        .p {
+            padding-top: 1em;
+            text-align: center;
+            font-weight: 600;
+            font-size: 16px;
+        }
+
+        .container {
+            max-width: 1160px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .arrow{
+         color: white;   
+         cursor: pointer;
+        }
+        .arrow:hover{
+            transform: scale(1.09);
+        }
+        .circle{
+            display: inline-block;
+            cursor: pointer;
+            height:20px;
+            width:20px;
+            border:2px solid white;
+            border-radius: 50%;
+        }
+        .active{
+            background-color: white;
+        }
+        @media screen and (max-width: 880px) {
+            .container{
+                flex-direction: column;
+            }
+            .tcard{
+                width:300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="testimonial flexCol">
+        <div class="container flexRow">
+            <span class="material-symbols-outlined arrow">
+                arrow_back_ios
+                </span>
+            <div class="tcard flexCol">
+                <div class="logo">
+                    <span class="material-symbols-outlined img">
+                        account_circle
+                    </span>
+                </div>
+                <div class="tBody flexCol">
+                    <div class="header flexCol">
+                        <h1 class="name">Ankit Kumar</h1>
+                        <h5 class="info">Frontend Developer</h5>
+                    </div>
+                    <div class="rating flexRow">
+                        <span class="material-symbols-outlined rColor">
+                            grade
+                        </span>
+                        <span class="material-symbols-outlined rColor">
+                            grade
+                        </span>
+                        <span class="material-symbols-outlined rColor">
+                            grade
+                        </span>
+                        <span class="material-symbols-outlined  rColor">
+                            grade
+                        </span>
+                    </div>
+                    <div class="p">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et porro ipsa, quos iste nobis
+                        molestias minus distinctio quam voluptatem facilis.
+                    </div>
+                </div>
+            </div>
+            <div class="tcard flexCol">
+                <div class="logo">
+                    <span class="material-symbols-outlined img">
+                        account_circle
+                    </span>
+                </div>
+                <div class="tBody flexCol">
+                    <div class="header flexCol">
+                        <h1 class="name">Ankit Kumar</h1>
+                        <h5 class="info">Frontend Developer</h5>
+                    </div>
+                    <div class="rating flexRow">
+                        <span class="material-symbols-outlined rColor">
+                            grade
+                        </span>
+                        <span class="material-symbols-outlined rColor">
+                            grade
+                        </span>
+                        <span class="material-symbols-outlined rColor">
+                            grade
+                        </span>
+                        <span class="material-symbols-outlined  rColor">
+                            grade
+                        </span>
+                    </div>
+                    <div class="p">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et porro ipsa, quos iste nobis
+                        molestias minus distinctio quam voluptatem facilis.
+                    </div>
+                </div>
+            </div>
+            <div class="tcard flexCol">
+                <div class="logo">
+                    <span class="material-symbols-outlined img">
+                        account_circle
+                    </span>
+                </div>
+                <div class="tBody flexCol">
+                    <div class="header flexCol">
+                        <h1 class="name">Ankit Kumar</h1>
+                        <h5 class="info">Frontend Developer</h5>
+                    </div>
+                    <div class="rating flexRow">
+                        <span class="material-symbols-outlined rColor">
+                            grade
+                        </span>
+                        <span class="material-symbols-outlined rColor">
+                            grade
+                        </span>
+                        <span class="material-symbols-outlined rColor">
+                            grade
+                        </span>
+                        <span class="material-symbols-outlined  rColor">
+                            grade
+                        </span>
+                    </div>
+                    <div class="p">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et porro ipsa, quos iste nobis
+                        molestias minus distinctio quam voluptatem facilis.
+                    </div>
+                </div>
+            </div>
+            <span class="material-symbols-outlined arrow" onclick="next()">
+                arrow_forward_ios
+                </span>
+        </div>
+        <div class="navCirlcle flexRow">
+            <span class="circle active"></span>
+            <span class="circle "></span>
+            <span class="circle "></span>
+        </div>
+    </section>
+    <script>
+        const next=()=>{
+            let n=0;
+           let i= document.querySelectorAll(".circle")[++n];
+           i.style.backgroundColor="white";
+           n=n+1;
+        }
+    </script>
+</body>
+
+</html>
