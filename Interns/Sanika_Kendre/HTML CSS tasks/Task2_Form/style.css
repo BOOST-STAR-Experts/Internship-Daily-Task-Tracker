@@ -1,0 +1,140 @@
+*{
+    margin:0;
+    padding:0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    font-family: 'Roboto', sans-serif;
+    color:gray;
+}
+head{
+    visibility: hidden;
+}
+body{
+    margin-top:40px;
+}
+.form_cont{
+    width: 350px;;
+    height:auto;
+}
+.form_cont{
+    background-color:#f5f5f5;
+    box-shadow: 0 0 5px rgba(155,155,155, 0.411),1px 2px 10px rgba(155, 155, 155, 0.411);
+    border:1px solid #cccccc;
+    border-radius:5px;
+}
+hr{
+    width:100%;
+    color:#cccccc;
+    opacity:0.4
+}
+.form_cont h3{
+    margin:20px 0;
+    font-size:30px;
+    font-weight:200;
+}
+.radio_row{
+    margin:15px 0;
+    width:100%;
+    flex-direction: row;
+    justify-content: left;
+}
+.radio_row label{
+    margin-inline-end: 20px;
+}
+.radio_row input{
+    margin-right:10px;
+}
+.radio_row input[type='radio']{
+    appearance: none;
+    width:20px;
+    height:20px;
+    border:1px solid rgb(0, 89, 255);
+    border-radius:50%;
+    background-color: rgb(0, 89, 255);
+    outline:none;
+    
+}
+.radio_row input[type='radio']::before{
+    display:block;
+    border-radius: 50%;
+}
+.radio_row input[type='radio']:checked::before{
+     color: white;
+     width:20px;
+     height:12px;
+     font-family: 'FontAwesome';
+     content:'\f00c';
+     text-align: center;
+}
+.info{
+    width: 100%;
+    display:flex;
+    margin:0px 0 20px 0;
+}
+.input_text{
+    width:290px;
+    height:30px;
+    padding:5px;
+    margin:-20px 0 0 0;
+    border:2px solid rgb(207, 207, 207);
+    border-radius:8px;
+    box-shadow:0 0 5px rgba(155, 155, 155, 0.411);
+}
+.info input:focus{
+    border:2px solid rgb(2077, 207, 20);
+    box-shadow:0 0 5px rgba(155, 155, 155, 0.664);
+}
+.info label{
+    display:inline-flex;
+    margin:0;
+    padding:0;
+    position:relative;
+    top:22px;
+    right:130px;
+    width:50px;
+    height:40px;
+    background-color:rgb(0, 102, 255) ;
+    text-align:center;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    font-size:20px;
+}
+.info i{
+    color:white
+}
+.info input::placeholder{
+    padding-left:50px;
+    font-size:16px;
+    align-content: center;
+}
+.para_text {
+    margin-top:10px;
+}
+.para_text p{
+    font-size:12px;
+}
+.para_text p span{
+    text-decoration: underline;
+    color:blue;
+}
+.submit_btn{
+    width:300px;
+    height:30px;
+    margin:10px 0 20px 0;
+    padding:5px 0;
+}
+.submit_btn{
+    background-color: rgb(0, 102, 255);
+    color:white;
+    font-size:20px;
+    border-radius:8px;
+    font-size:16px;
+    font-weight:600;
+}
+@media screen and (max-width:600px) {
+    body{
+        transform: scale(0.9,1);
+    }
+}

@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:"Poppins",sans-serif;
+    /* color:white; */
+}
+body{
+    min-height:100vh;
+    width:100%;
+    background:#eeeceb;
+}
+footer{
+    position:fixed;
+    background:#252525;
+    width:100%;
+    bottom:0;
+    left:0;
+}
+.footer_upper{
+    display: flex;
+    justify-content: space-between;
+    padding:40px 100px;
+}
+.footer_upper .link_box{
+    list-style-type: none;
+}
+.footer_upper .link_box .heading{
+    color:white;
+    margin-bottom: 25px;
+    font-size: 22px;
+    position:relative;
+}
+.footer_upper .link_box .heading::before{
+    content: '';
+    width:70px;
+    height:2px;
+    position: absolute;
+    background-color: #00CED1;
+    bottom:-10px;
+}
+.link_box li a{
+    text-decoration: none;
+    color:white;
+    font-size: 16px;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+.link_box li{
+    margin:20px 0;
+}
+.link_box li a:hover{
+    opacity:1;
+}
+.input_box input{
+    background-color: white;
+    width:250px;
+    border:none;
+    height: 45px;
+    display: block;
+    padding-left:20px;
+    margin:14px 0;
+}
+.link_box .submit_btn{
+    padding:0 20px;
+    background-color: #00CED1;
+    border:none;
+    color: #eeeceb;
+    font-weight: 400;
+    font-size: 16px;
+}
+.hr{
+    opacity:0.7;
+}
+.footer_bottom{
+    margin:20px 20px;
+    display:flex;
+    justify-content: space-between;
+}
+.footer_bottom .bottom_text{
+    color:white;
+    font-size: 16px;;
+}
+.footer_bottom .icons a i{
+    display:inline-block;
+    color:white;
+    font-size: 20px;
+    margin:0 20px;
+    transition: 0.5s;
+}
+.footer_bottom .icons a i:hover{
+    color:#00CED1;
+}
+@media (max-width:600px){
+    .footer_upper{
+        flex-direction: column;
+        padding:20px 30px;
+    }
+    .footer_upper .link_box .heading{
+        margin-left:20px;
+        margin-bottom: 20px;
+    }
+    .input_box input{
+        width:100%;
+    }
+}
+@media (max-width:900px){
+    .footer_upper{
+        flex-wrap: wrap;
+        width:100%;
+        padding:20px 40px;
+    }
+    .footer_upper .link_box .heading{
+        margin-left:20px;
+        margin-bottom: 20px;
+    }
+    .input_box input{
+        width:100%;
+    }
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="style.css" rel="stylesheet">
+    <title>Task 2 - Registration Form</title>
+</head>
+<body>
+    <div class="form_cont">
+        <form>
+            <h3>Registration</h3>
+            <hr>
+            <div class="radio_row">
+                <input type="radio" id="personal" checked>
+                <label for="personal">Personal</label>
+                <input type="radio" id="company">
+                <label for="company">Company</label>
+            </div>
+            <hr>
+            <div class="info">
+                <label class="icons" for="email"><i class="fa fa-envelope icon"></i></label>
+                <input type="text" for="email" class="input_text" placeholder="Email">
+                <label class="icons" for="name"><i class="fa fa-user icon"></i></label>
+                <input type="text" for="name" class="input_text" placeholder="Name">
+                <label class="icons" for="pass"><i class="fa fa-lock icon"></i></label>
+                <input type="password" for="pass" class="input_text" placeholder="Password">
+            </div>
+            <hr>
+            <div class="radio_row">
+                <input type="radio" id="male" checked>
+                <label for="male">Male</label>
+                <input type="radio" id="female">
+                <label for="female">Female</label>
+            </div>
+            <hr>
+            <div class="para_text">
+                <p>By clicking Register, you agree on our <span>Privacy Policy for W3Docs</span></p>
+            </div>
+            <btn type="submit" class="submit_btn">Submit</btn>
+        </form>
+    </div>
+</body>
+</html>

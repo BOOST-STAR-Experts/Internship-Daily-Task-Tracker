@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+:root{
+    --purple500:#281154;
+    --purple300:#270082;
+    --purple600:#1b0059;
+    --red600:#dc0000;
+    --body:#f9f6ff;
+    --max-width:1200px;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto',sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+    scroll-behavior: smooth;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+.container{
+    max-width: 1200px;
+    margin:0 auto;
+}
+header{
+    background-color: var(--purple500);
+    color:white;
+    /* position:fixed; */
+    /* box-shadow:2px 2px 2px black; */
+}
+.title{
+    font-weight:600;
+    font-size:30px;
+}
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px 0;
+}
+nav ul{
+    display:flex;
+    gap:20px;
+    transition: 0.2s ease-in;
+}
+nav ul li:hover{
+    border-bottom: 2px solid white;
+    transition: 0.2s ease-in;
+}
+button{
+    padding:10px 15px;
+    transition: 0.2s ease-in-out;
+    border:none;    
+}
+button:hover{
+    transition: 0.2s ease-in-out;
+    opacity:0.8
+}
+.hero_section{
+    background-image: url(images/background1.jpg);
+    display:grid;
+    text-align:center;
+    place-items:center;
+    color:white;
+    height:100vh;
+    background-size:100% 100%;
+}
+.hero_section .container{
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+}
+.hero_section .container h1{
+    font-size:96px;
+}
+.hero_section .container h3{
+    font-size:32px;
+}
+.music_section{
+    padding-top:50px;
+    background-color: var(--purple500);
+}
+.music_section .container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    gap:30px;
+}
+.btn-primary{
+    background-color: var(--red600);
+    color:white;
+}
+.ipad_iphone_img{
+    margin-top:-400px;
+    position: relative;
+    top:400px;
+}
+.about_music{
+    padding-top:500px;
+    display:grid;
+    place-items: center;
+    text-align: center;
+    margin:0 50px 50px 50px;
+    gap:50px;
+}
+.btn-secondary{
+    background-color: var(--purple300);
+    color:white;
+}
+.video_section{
+    background-image:url(https://media.istockphoto.com/id/1324006497/photo/music-controller-dj-mixer-in-a-nightclub-at-a-party.jpg?s=612x612&w=0&k=20&c=AyXSZEWy3lHb7hKUfh9FXAsZGAO_p838uVaAlFbWa9k=);
+    background-repeat: no-repeat;
+    background-size:cover;
+    min-height:800px;
+    display:grid;
+    place-items:center;
+    color:white;
+    text-align: center;
+}
+.video_section .container{
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+    margin-top:-200px;
+}
+.gift_card{
+    width:100%;
+    height:100%;
+    /* padding:40px; */
+}
+.gift_section{
+    display:flex;
+    justify-content:center;
+    margin:100px 50px;
+    gap:50px;
+}
+.gift-content {
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+.gift-content h3{
+    font-size:25px;
+    text-align:center;
+}
+.footer_upper {
+    background-color:var(--purple600);
+    padding:20px;
+}
+.footer_upper .container {
+    display:flex;
+    justify-content:space-between;
+    color:white;
+}
+
+.footer_upper h4 {
+    padding-bottom:10px;
+    border-bottom:2px solid white;
+    margin-bottom:10px;
+}
+.footer_lower {
+    background-color:var(--purple300);
+    padding:20px;
+    display:flex;
+    justify-content:center;
+    color:white;
+}
+  
