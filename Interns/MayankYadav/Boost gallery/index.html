@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Image Gallery</title>
+<style>
+    body, html {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .gallery-item {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        position: relative;
+    }
+
+    .gallery-item img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        transition: transform 0.3s;
+    }
+
+   img:hover {
+        transform: scale(1.1); 
+    }
+
+    .image-container {
+        overflow: hidden;
+        position: relative;
+    }
+
+    @media only screen and (max-width: 768px) {
+        .gallery-item {
+            width: calc(50% - 10px);
+        }
+
+        .gallery-item:nth-child(2) {
+            width: calc(100% - 10px);
+        }
+
+        .gallery-item:nth-child(3) {
+            width: calc(100% - 10px);
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="gallery-item">
+        <div class="image-container" style="height: 250px; width: 600px;">
+            <img src="/image 1.jpeg" alt="">
+        </div>
+        <div class="image-container" style="height: 500px; width: 600px;">
+            <img src="/image2.jpeg" alt="">
+        </div>
+    </div>
+
+    <div class="gallery-item" style=" width: 300px; ">
+        <div class="image-container" style="height: 765px;" >
+            <img src="/image. 3.jpeg" alt="">
+        </div>
+    </div>
+
+    <div class="gallery-item">
+        <div class="image-container" style="height: 250px; width: 350px;">
+            <img src="/image4.jpeg" alt="">
+        </div>
+        <div class="image-container" style="height: 250px; width: 350px;">
+            <img src="/image5.jpeg" alt="">
+        </div>
+        <div class="image-container" style="height: 250px; width: 350px;">
+            <img src="/image6.jpeg" alt="">
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
+
+ 
+    
+    
+</body>
+</html>
