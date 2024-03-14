@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        .zoom {
+          transition: transform 0.75s; 
+          margin: 0 auto;
+        }
+        
+        .zoom:hover {
+          transform: scale(1.05); 
+          cursor: pointer;
+        }
+        .maincontainer {
+            height: 100vh; 
+            width: 100vw; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            gap: 15px; 
+            flex-wrap: wrap;
+        }
+        .container1 {
+            height: 750px; 
+            width: 600px; 
+            display: flex; 
+            flex-direction: column; 
+            gap: 15px;
+        }
+        .container2 {
+            height: 750px; 
+            width: 300px;
+        }
+        .container3 {
+            height: 750px; 
+            width: 350px; 
+            display: flex; 
+            flex-direction: column; 
+            gap: 15px;
+        } 
+        .image{
+            height: 100%; 
+            width: 100%; 
+            object-fit: cover; 
+            border-radius: 10px;
+        }
+    </style>
+        
+</head>
+<body>
+    <div class="maincontainer">
+        <!-- column1-->
+        <div class="container1">
+
+            <div style="height: 250px; width: 600px;" class="zoom">
+                <img src="/Images/image1.webp" alt="image1" class="image">
+            </div>
+
+            <div style="height: 500px; width: 600px;" class="zoom">
+                <img src="/Images/image2.jpeg" alt="image2" class="image">
+            </div>
+            
+        </div>
+
+        <!-- column2 -->
+        <div class="container2">
+            <div style="height: 750px; width: 300px;" class="zoom">
+                <img src="/Images/image3.jpeg" alt="image3" class="image">
+            </div>
+        </div>
+
+        <!-- column3 -->
+        <div class="container3">
+
+            <div style="height: 250px; width: 350px;" class="zoom">
+                <img src="/Images/image4.webp" alt="image4" class="image">
+            </div>
+
+            <div style="height: 250px; width: 350px;" class="zoom">
+                <img src="/Images/image5.avif" alt="image5" class="image">
+            </div>
+
+            <div style="height: 250px; width: 350px;" class="zoom">
+                <img src="/Images/image6.jpeg" alt="image6" class="image">
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>
